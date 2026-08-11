@@ -1,0 +1,247 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   VARIABLES DE TEMA ADAPTATIVAS - WCAG 2.1 AA COMPLIANT
+   ========================================================================== */
+
+:root {
+	/* Modo Claro Editorial (Warm Linen & Rich Charcoal) */
+	--bg-primary: #FDFCFB;
+	--bg-secondary: #F5F2EB;
+	--text-primary: #1C1917;
+	--text-secondary: #57534E; /* Contraste > 7:1 en fondos claros */
+	--border-color: rgba(28, 25, 23, 0.12);
+	--card-bg: rgba(255, 255, 255, 0.92);
+	
+	/* Acento Hospitality: Dorado adaptado con contraste 5.5:1 en Light Mode */
+	--brand-gold: #7C5E3B;
+	--brand-gold-hover: #634A2D;
+	--brand-dark: #1C1917;
+	--brand-muted: #78716C;
+	--brand-accent: #2E5A44;
+
+	/* Acento Developer: Cyan & Esmeralda técnicos */
+	--brand-tech-cyan: #0284C7;
+	--brand-tech-emerald: #059669;
+	--brand-tech-dark: #0F172A;
+}
+
+:root.dark {
+	/* Modo Oscuro Lujoso (Obsidian & Champagne Gold) */
+	--bg-primary: #0F0E0D;
+	--bg-secondary: #181614;
+	--text-primary: #F5F4F0;
+	--text-secondary: #A8A29E;
+	--border-color: rgba(245, 244, 240, 0.10);
+	--card-bg: rgba(24, 22, 20, 0.70);
+	
+	/* Acento Hospitality: Dorado Champaña luminoso (8.2:1 en Dark Mode) */
+	--brand-gold: #C5A880;
+	--brand-gold-hover: #D8BF9B;
+	--brand-dark: #0A0908;
+	--brand-muted: #78716C;
+	--brand-accent: #4C6E5D;
+
+	/* Acento Developer: Cyan Eléctrico & Esmeralda */
+	--brand-tech-cyan: #00D4FF;
+	--brand-tech-emerald: #10B981;
+	--brand-tech-dark: #020617;
+}
+
+/* ==========================================================================
+   INTEGRACIÓN CON TAILWIND CSS v4 (@theme)
+   ========================================================================== */
+
+@theme {
+	--color-brand-bg-primary: var(--bg-primary);
+	--color-brand-bg-secondary: var(--bg-secondary);
+	--color-brand-text-primary: var(--text-primary);
+	--color-brand-text-secondary: var(--text-secondary);
+	--color-brand-border: var(--border-color);
+	--color-brand-card-bg: var(--card-bg);
+	
+	--color-brand-gold: var(--brand-gold);
+	--color-brand-gold-hover: var(--brand-gold-hover);
+	--color-brand-dark: var(--brand-dark);
+	--color-brand-muted: var(--brand-muted);
+	--color-brand-accent: var(--brand-accent);
+	
+	--color-tech-cyan: var(--brand-tech-cyan);
+	--color-tech-emerald: var(--brand-tech-emerald);
+	--color-tech-dark: var(--brand-tech-dark);
+	
+	--font-serif: "Cormorant Garamond", Georgia, serif;
+	--font-sans: "Montserrat", -apple-system, sans-serif;
+	--font-mono: "Fira Code", monospace;
+}
+
+/* ==========================================================================
+   REGLAS DE VISIBILIDAD DUAL PERSONA
+   ========================================================================== */
+
+html[data-persona="hospitality"] .persona-developer-only {
+	display: none !important;
+}
+
+html[data-persona="developer"] .persona-hospitality-only {
+	display: none !important;
+}
+
+.fade-persona {
+	transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   ACCESIBILIDAD Y ENLACES DE SALTO
+   ========================================================================== */
+
+.skip-link {
+	position: absolute;
+	top: -60px;
+	left: 1.5rem;
+	background: var(--brand-gold);
+	color: #ffffff;
+	padding: 0.75rem 1.5rem;
+	z-index: 100;
+	transition: top 0.2s ease-in-out;
+	border-radius: 0 0 6px 6px;
+	font-weight: 600;
+	font-size: 0.875rem;
+	text-decoration: none;
+}
+
+.skip-link:focus {
+	top: 0;
+	outline: 2px solid #ffffff;
+	outline-offset: 2px;
+}
+
+/* Resplandor visual en textos */
+.dark .text-glow {
+	text-shadow: 0 0 16px rgba(197, 168, 128, 0.35);
+}
+
+.dark .text-glow-cyan {
+	text-shadow: 0 0 16px rgba(0, 212, 255, 0.40);
+}
+
+/* Micro-interacción en botones */
+.btn-hover {
+	transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-hover:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 24px -10px rgba(197, 168, 128, 0.45);
+}
+
+/* ==========================================================================
+   RESPETO ESTRICTO A PREFERS-REDUCED-MOTION
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+	*, ::before, ::after {
+		animation-delay: 0s !important;
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+	
+	[data-aos] {
+		opacity: 1 !important;
+		transform: none !important;
+		transition: none !important;
+		animation: none !important;
+	}
+}
+
+/* ==========================================================================
+   REGLAS DE IMPRESIÓN Y EXPORTACIÓN LIMPIA DE CV EN PDF (A4 / CARTA)
+   ========================================================================== */
+
+@media print {
+	@page {
+		size: A4 portrait;
+		margin: 10mm 15mm 10mm 15mm;
+	}
+
+	html, body {
+		background: #ffffff !important;
+		color: #111111 !important;
+		font-size: 10.5pt !important;
+		line-height: 1.4 !important;
+	}
+
+	/* Ocultar elementos irrelevantes para papel */
+	#preloader,
+	header,
+	#mobile-menu,
+	#gallery,
+	#contact form,
+	.skip-link,
+	#theme-toggle,
+	#menu-toggle,
+	.btn-export-pdf,
+	.persona-switcher,
+	[role="group"][aria-label*="idioma"],
+	footer,
+	.no-print {
+		display: none !important;
+	}
+
+	/* Eliminar sombras y desenfoques */
+	* {
+		box-shadow: none !important;
+		text-shadow: none !important;
+		filter: none !important;
+		backdrop-filter: none !important;
+	}
+
+	/* Ajustar contenedores */
+	main, section, .max-w-7xl, .max-w-4xl {
+		max-width: 100% !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		background: transparent !important;
+	}
+
+	section {
+		padding-top: 0.75rem !important;
+		padding-bottom: 0.75rem !important;
+		border: none !important;
+	}
+
+	/* Evitar cortes a la mitad en saltos de página */
+	.group,
+	#experience .space-y-12 > div,
+	#projects .grid > article,
+	#skills .grid > div {
+		break-inside: avoid !important;
+		page-break-inside: avoid !important;
+	}
+
+	h1, h2, h3, h4 {
+		color: #111111 !important;
+		break-after: avoid !important;
+	}
+
+	.text-brand-gold,
+	.text-tech-cyan {
+		color: #5A4328 !important;
+		font-weight: 600 !important;
+	}
+
+	/* Mostrar URLs de contacto */
+	#contact a[href^="tel:"]::after {
+		content: " (" attr(href) ")";
+		font-size: 9pt;
+		color: #444444;
+	}
+	
+	#contact a[href^="mailto:"]::after {
+		content: " (" attr(href) ")";
+		font-size: 9pt;
+		color: #444444;
+	}
+}

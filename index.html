@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth" data-persona="hospitality">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Claudio Ceppi | Jefe de Sala & Hospitality Management | Murcia</title>
+	
+	<!-- Metadatos de SEO y Redes Sociales -->
+	<meta name="description" content="Portfolio profesional de Claudio Ceppi, especialista en dirección de sala, hospitalidad y optimización de operaciones gastronómicas con más de 10 años de experiencia.">
+	<meta name="keywords" content="Claudio Ceppi, Jefe de Sala, Hospitality Manager, Floor Manager, Gastronomía, Software Developer, Frontend, Python, Murcia, España">
+	<meta name="author" content="Claudio Ceppi">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<link rel="canonical" href="https://claudio-ceppi.web.app/">
+	
+	<!-- Open Graph / LinkedIn / WhatsApp -->
+	<meta property="og:type" content="profile">
+	<meta property="og:site_name" content="Claudio Ceppi - Dual Portfolio">
+	<meta property="og:title" content="Claudio Ceppi | Hospitality Director & Software Developer">
+	<meta property="og:description" content="Especialista en dirección de sala y desarrollo de software web accesible (WCAG 2.1 AA). Fusión entre excelencia operativa y arquitectura digital.">
+	<meta property="og:url" content="https://claudio-ceppi.web.app/">
+	<meta property="og:image" content="https://claudio-ceppi.web.app/assets/images/claudio_portrait.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="1500">
+	<meta property="og:image:alt" content="Retrato profesional de Claudio Ceppi">
+	<meta property="og:locale" content="es_ES">
+	
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Claudio Ceppi | Hospitality & Software Engineering">
+	<meta name="twitter:description" content="Portfolio profesional de Claudio Ceppi. Dirección de sala y desarrollo frontend moderno.">
+	<meta name="twitter:image" content="https://claudio-ceppi.web.app/assets/images/claudio_portrait.jpg">
+
+	<!-- Favicons Vectoriales y Manifiesto -->
+	<link rel="icon" type="image/svg+xml" href="assets/favicons/favicon.svg">
+	<link rel="alternate icon" href="favicon.svg">
+	
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Fira+Code:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	
+	<!-- FontAwesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	
+	<!-- AOS Stylesheet -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+	<!-- Hoja de Estilos Tailwind v4 Compilada -->
+	<link rel="stylesheet" href="css/output.css">
+
+	<!-- Script síncrono bloqueante para evitar FOUC de Tema y Persona -->
+	<script>
+		(function() {
+			try {
+				var savedTheme = localStorage.getItem('theme');
+				var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+				if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+					document.documentElement.classList.add('dark');
+				} else {
+					document.documentElement.classList.remove('dark');
+				}
+				var params = new URLSearchParams(window.location.search);
+				var mode = params.get('mode') || localStorage.getItem('active_persona') || 'hospitality';
+				document.documentElement.setAttribute('data-persona', mode);
+			} catch (e) {}
+		})();
+	</script>
+
+	<!-- Schema.org JSON-LD Grafo -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+				"@type": "WebSite",
+				"@id": "https://claudio-ceppi.web.app/#website",
+				"url": "https://claudio-ceppi.web.app/",
+				"name": "Claudio Ceppi Portfolio",
+				"description": "Portfolio y Curriculum Vitae de Claudio Ceppi - Profesional de la Gastronomía y Desarrollador de Software",
+				"publisher": {
+					"@id": "https://claudio-ceppi.web.app/#person"
+				},
+				"inLanguage": ["es-ES", "en-US"]
+			},
+			{
+				"@type": "ProfilePage",
+				"@id": "https://claudio-ceppi.web.app/#webpage",
+				"url": "https://claudio-ceppi.web.app/",
+				"name": "Claudio Ceppi | Dual Persona Portfolio",
+				"isPartOf": {
+					"@id": "https://claudio-ceppi.web.app/#website"
+				},
+				"about": {
+					"@id": "https://claudio-ceppi.web.app/#person"
+				}
+			},
+			{
+				"@type": "Person",
+				"@id": "https://claudio-ceppi.web.app/#person",
+				"name": "Claudio Ceppi",
+				"givenName": "Claudio",
+				"familyName": "Ceppi",
+				"url": "https://claudio-ceppi.web.app/",
+				"telephone": "+34641511740",
+				"email": "mailto:erceppi@gmail.com",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Murcia",
+					"addressCountry": "ES"
+				},
+				"sameAs": [
+					"https://github.com/ClaudioCeppi83"
+				],
+				"hasOccupation": [
+					{
+						"@type": "Occupation",
+						"name": "Hospitality & Floor Manager",
+						"description": "Dirección de sala, servicio al cliente VIP, arqueos de caja y control de operaciones gastronómicas."
+					},
+					{
+						"@type": "Occupation",
+						"name": "Frontend & Software Developer",
+						"description": "Desarrollo de interfaces web accesibles (WCAG 2.1 AA), aplicaciones Python y despliegues en Google Cloud."
+					}
+				]
+			}
+		]
+	}
+	</script>
+</head>
+<body class="bg-brand-bg-primary text-brand-text-primary font-sans antialiased overflow-x-hidden selection:bg-brand-gold selection:text-brand-dark transition-colors duration-300">
+
+	<!-- Enlace de Salto Accesible -->
+	<a href="#main-content" class="skip-link" data-i18n="skip_link">Saltar al contenido principal</a>
+
+	<!-- Preloader de Carga Inicial -->
+	<div id="preloader" class="fixed inset-0 bg-brand-dark z-50 flex flex-col justify-center items-center transition-all duration-700" aria-hidden="true">
+		<span class="font-serif text-4xl md:text-6xl text-brand-gold italic tracking-widest opacity-0 animate-[fadeIn_1.2s_ease-out_forwards]">Claudio Ceppi</span>
+		<div class="h-[1px] w-12 bg-brand-gold mt-4 opacity-0 animate-[scaleWidth_1.2s_ease-out_0.4s_forwards]"></div>
+		<p class="text-xs uppercase tracking-widest text-brand-muted mt-4 opacity-0 animate-[fadeIn_1.2s_ease-out_0.8s_forwards] font-sans">Hospitality ⟷ Software Engineering</p>
+	</div>
+
+	<!-- Header de Navegación -->
+	<header class="fixed top-0 left-0 w-full z-40 bg-brand-bg-primary/90 backdrop-blur-md border-b border-brand-border transition-all duration-300">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center gap-2">
+			
+			<!-- Logotipo / Monograma de Marca -->
+			<a href="#" class="font-serif text-2xl tracking-wider text-brand-gold font-semibold text-glow focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none rounded p-1" aria-label="Claudio Ceppi - Inicio">
+				C<span class="text-brand-text-primary font-light font-sans text-lg transition-colors duration-300">C</span>
+			</a>
+
+			<!-- SELECTOR DUAL DE IDENTIDAD (PERSONA SWITCHER) -->
+			<div class="persona-switcher flex items-center bg-brand-bg-secondary border border-brand-border rounded-full p-1 transition-colors duration-300" role="group" data-i18n-aria="aria_persona_group" aria-label="Seleccionar perfil profesional activo">
+				<button onclick="switch_persona('hospitality')" id="btn-persona-hosp" class="px-3.5 py-1.5 rounded-full bg-brand-gold text-brand-dark font-medium transition-all duration-300 shadow-sm focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none flex items-center gap-1.5 text-xs" aria-pressed="true">
+					<i class="fa-solid fa-wine-glass text-[11px]" aria-hidden="true"></i>
+					<span data-i18n="persona_label_hospitality">Hostelería</span>
+				</button>
+				<button onclick="switch_persona('developer')" id="btn-persona-dev" class="px-3.5 py-1.5 rounded-full text-brand-text-secondary hover:text-brand-text-primary transition-all duration-300 focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none flex items-center gap-1.5 text-xs" aria-pressed="false">
+					<i class="fa-solid fa-code text-[11px]" aria-hidden="true"></i>
+					<span data-i18n="persona_label_developer">Developer</span>
+				</button>
+			</div>
+			
+			<!-- Menú de Navegación de Escritorio -->
+			<nav class="hidden lg:flex space-x-6 text-xs uppercase tracking-widest" aria-label="Menú principal de escritorio">
+				<a href="#about" class="hover:text-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none rounded transition-colors duration-300" data-i18n="nav_about">Sobre Mí</a>
+				<a href="#experience" class="hover:text-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none rounded transition-colors duration-300" data-i18n="nav_experience">Trayectoria</a>
+				<a href="#skills" class="hover:text-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none rounded transition-colors duration-300" data-i18n="nav_skills">Habilidades</a>
+				<a href="#nexus" class="hover:text-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none rounded transition-colors duration-300 font-semibold" data-i18n="nav_nexus">Nexo GastroTech</a>
+				<a href="#gallery" class="hover:text-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none rounded transition-colors duration-300" data-i18n="nav_gallery">Galería</a>
+				<a href="#contact" class="hover:text-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none rounded transition-colors duration-300" data-i18n="nav_contact">Contacto</a>
+			</nav>
+
+			<!-- Controles: Idioma, Tema, Descarga CV PDF y Menú Móvil -->
+			<div class="flex items-center space-x-2 sm:space-x-3">
+				
+				<!-- Switcher Bilingüe Accesible -->
+				<div class="flex space-x-1 text-xs border border-brand-border rounded-full p-0.5 bg-brand-bg-secondary transition-colors duration-300" role="group" data-i18n-aria="aria_lang_group" aria-label="Seleccionar idioma de la página">
+					<button onclick="switch_language('es')" id="btn-es" class="px-2.5 py-1 rounded-full bg-brand-gold text-brand-dark font-medium transition-all duration-300 focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none text-xs" aria-pressed="true">ES</button>
+					<button onclick="switch_language('en')" id="btn-en" class="px-2.5 py-1 rounded-full text-brand-text-secondary hover:text-brand-text-primary transition-all duration-300 focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none text-xs" aria-pressed="false">EN</button>
+				</div>
+				
+				<!-- Theme Toggle -->
+				<button id="theme-toggle" aria-label="Cambiar tema de color" class="text-brand-text-primary hover:text-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none p-2 rounded transition-colors duration-300 min-w-[40px] min-h-[40px] flex items-center justify-center">
+					<i id="theme-icon" class="fa-solid fa-moon text-base" aria-hidden="true"></i>
+				</button>
+				
+				<!-- Botón Exportar CV PDF -->
+				<button class="btn-export-pdf hidden sm:inline-flex items-center border border-brand-gold/40 text-brand-gold text-xs uppercase tracking-wider px-3.5 py-2 rounded hover:bg-brand-gold hover:text-brand-dark focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none transition-all duration-300" aria-label="Descargar o imprimir Currículum Vitae en PDF">
+					<i class="fa-solid fa-file-pdf mr-1.5 text-sm" aria-hidden="true"></i>
+					<span data-i18n="nav_export_pdf">Exportar CV</span>
+				</button>
+				
+				<!-- Botón Menú Móvil -->
+				<button id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú de navegación" class="lg:hidden text-brand-text-primary hover:text-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none p-2 rounded min-w-[40px] min-h-[40px] flex items-center justify-center">
+					<i class="fa-solid fa-bars text-lg" aria-hidden="true"></i>
+				</button>
+			</div>
+		</div>
+		
+		<!-- Menú Desplegable para Móviles -->
+		<nav id="mobile-menu" class="hidden lg:hidden bg-brand-bg-secondary border-b border-brand-border px-6 py-6 space-y-4 text-center transition-colors duration-300" aria-label="Menú principal móvil">
+			<a href="#about" onclick="toggle_menu()" class="block text-brand-text-primary hover:text-brand-gold py-2 border-b border-brand-border uppercase tracking-widest text-xs" data-i18n="nav_about">Sobre Mí</a>
+			<a href="#experience" onclick="toggle_menu()" class="block text-brand-text-primary hover:text-brand-gold py-2 border-b border-brand-border uppercase tracking-widest text-xs" data-i18n="nav_experience">Trayectoria</a>
+			<a href="#skills" onclick="toggle_menu()" class="block text-brand-text-primary hover:text-brand-gold py-2 border-b border-brand-border uppercase tracking-widest text-xs" data-i18n="nav_skills">Habilidades</a>
+			<a href="#nexus" onclick="toggle_menu()" class="block text-brand-text-primary hover:text-brand-gold py-2 border-b border-brand-border uppercase tracking-widest text-xs font-semibold" data-i18n="nav_nexus">Nexo GastroTech</a>
+			<a href="#gallery" onclick="toggle_menu()" class="block text-brand-text-primary hover:text-brand-gold py-2 border-b border-brand-border uppercase tracking-widest text-xs" data-i18n="nav_gallery">Galería</a>
+			<a href="#contact" onclick="toggle_menu()" class="block text-brand-text-primary hover:text-brand-gold py-2 uppercase tracking-widest text-xs" data-i18n="nav_contact">Contacto</a>
+			<div class="pt-2">
+				<button class="btn-export-pdf w-full bg-brand-gold text-brand-dark py-2.5 rounded text-xs uppercase tracking-wider font-semibold">
+					<i class="fa-solid fa-file-pdf mr-2"></i> <span data-i18n="nav_export_pdf">Exportar CV (PDF)</span>
+				</button>
+			</div>
+		</nav>
+	</header>
+
+	<main id="main-content">
+		
+		<!-- ==========================================================================
+		     HERO SECTION DUAL (HOSPITALITY / DEVELOPER)
+		     ========================================================================== -->
+		<section class="min-h-screen relative flex items-center pt-24 pb-16" aria-label="Presentación principal">
+			<div class="absolute inset-0 z-0 bg-gradient-to-r from-brand-bg-primary via-brand-bg-primary/95 to-transparent transition-colors duration-300"></div>
+			
+			<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 w-full py-8">
+				
+				<!-- CONTENIDO HERO: MODO HOSPITALITY -->
+				<div class="lg:col-span-7 flex flex-col justify-center order-2 lg:order-1 persona-hospitality-only fade-persona" data-aos="fade-right" data-aos-duration="1000">
+					<span class="text-brand-gold font-semibold uppercase tracking-[0.25em] text-xs md:text-sm mb-4 block" data-i18n="hosp_hero_tag">
+						<i class="fa-solid fa-utensils mr-2"></i> Hospitality & Restaurant Floor Manager
+					</span>
+					<h1 class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight mb-6 leading-tight" data-i18n="hosp_hero_headline">
+						Claudio <br class="hidden sm:inline">
+						<span class="text-brand-gold italic">Ceppi</span>
+					</h1>
+					<p class="text-base md:text-lg text-brand-text-secondary font-light leading-relaxed max-w-xl mb-8 transition-colors duration-300" data-i18n="hosp_hero_desc">
+						Especialista en dirección de sala y servicio al cliente de alto nivel, dedicado a garantizar experiencias gastronómicas memorables y optimizar las operaciones de alimentos y bebidas.
+					</p>
+					<div class="flex flex-wrap gap-4 items-center">
+						<a href="#about" class="btn-hover bg-brand-gold text-brand-dark px-7 py-3.5 font-semibold text-xs uppercase tracking-widest inline-flex items-center rounded focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none">
+							<span data-i18n="hosp_hero_btn_about">Conóceme más</span> <i class="fa-solid fa-arrow-right ml-2.5"></i>
+						</a>
+						<a href="#contact" class="px-7 py-3.5 text-brand-text-primary hover:text-brand-gold text-xs uppercase tracking-widest font-semibold inline-flex items-center border border-brand-border rounded transition-colors duration-300 focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none">
+							<span data-i18n="hosp_hero_btn_contact">Hablemos</span> <i class="fa-regular fa-paper-plane ml-2.5"></i>
+						</a>
+					</div>
+				</div>
+
+				<!-- CONTENIDO HERO: MODO DEVELOPER -->
+				<div class="lg:col-span-7 flex flex-col justify-center order-2 lg:order-1 persona-developer-only fade-persona" data-aos="fade-right" data-aos-duration="1000">
+					<span class="text-tech-cyan font-mono font-semibold uppercase tracking-[0.2em] text-xs md:text-sm mb-4 block" data-i18n="dev_hero_tag">
+						<i class="fa-solid fa-code mr-2"></i> Frontend Engineer & Software Developer
+					</span>
+					<h1 class="font-sans font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight mb-6 leading-tight text-glow-cyan" data-i18n="dev_hero_headline">
+						Claudio <br class="hidden sm:inline">
+						<span class="text-tech-cyan">Ceppi</span>
+					</h1>
+					<p class="text-base md:text-lg text-brand-text-secondary font-light leading-relaxed max-w-xl mb-8 transition-colors duration-300" data-i18n="dev_hero_desc">
+						Desarrollador de software enfocado en arquitecturas web accesibles (WCAG 2.1 AA), interfaces con Tailwind CSS & GSAP, herramientas CLI en Python y despliegues serverless en Google Cloud.
+					</p>
+					<div class="flex flex-wrap gap-4 items-center">
+						<a href="#experience" class="btn-hover bg-tech-cyan text-tech-dark px-7 py-3.5 font-semibold text-xs uppercase tracking-widest font-mono inline-flex items-center rounded focus-visible:ring-2 focus-visible:ring-tech-cyan focus-visible:outline-none">
+							<span data-i18n="dev_hero_btn_projects">Ver Proyectos</span> <i class="fa-solid fa-terminal ml-2.5"></i>
+						</a>
+						<a href="#contact" class="px-7 py-3.5 text-brand-text-primary hover:text-tech-cyan text-xs uppercase tracking-widest font-semibold inline-flex items-center border border-brand-border rounded transition-colors duration-300 focus-visible:ring-2 focus-visible:ring-tech-cyan focus-visible:outline-none">
+							<span data-i18n="dev_hero_btn_contact">Contactar</span> <i class="fa-solid fa-envelope ml-2.5"></i>
+						</a>
+					</div>
+				</div>
+				
+				<!-- IMAGEN DEL HERO (ADAPTATIVA SEGÚN PERSONA) -->
+				<div class="lg:col-span-5 flex justify-center lg:justify-end order-1 lg:order-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+					<!-- Retrato Modo Hospitality -->
+					<div class="relative w-full max-w-[280px] sm:max-w-[340px] aspect-[4/5] overflow-hidden rounded-2xl border-2 border-brand-gold/30 shadow-2xl p-1.5 bg-brand-card-bg persona-hospitality-only fade-persona">
+						<img src="assets/images/claudio_portrait.jpg" alt="Claudio Ceppi - Retrato Profesional en Sala" width="340" height="425" fetchpriority="high" class="w-full h-full object-cover rounded-xl transition-transform duration-700 hover:scale-105">
+						<div class="absolute bottom-4 left-4 right-4 bg-brand-bg-primary/90 backdrop-blur-sm p-3 rounded-lg border border-brand-border text-center">
+							<span class="text-[11px] font-semibold text-brand-gold uppercase tracking-wider block" data-i18n="hosp_hero_badge">10+ Años en Sala & Operaciones</span>
+						</div>
+					</div>
+
+					<!-- Retrato Modo Developer -->
+					<div class="relative w-full max-w-[280px] sm:max-w-[340px] aspect-[4/5] overflow-hidden rounded-2xl border-2 border-tech-cyan/40 shadow-2xl p-1.5 bg-brand-card-bg persona-developer-only fade-persona">
+						<img src="assets/images/claudio_casual.jpg" alt="Claudio Ceppi - Software & Web Developer" width="340" height="425" fetchpriority="high" class="w-full h-full object-cover rounded-xl transition-transform duration-700 hover:scale-105">
+						<div class="absolute bottom-4 left-4 right-4 bg-brand-bg-primary/90 backdrop-blur-sm p-3 rounded-lg border border-brand-border text-center">
+							<span class="text-[11px] font-mono font-semibold text-tech-cyan uppercase tracking-wider block" data-i18n="dev_hero_badge">Clean Architecture & A11y</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ==========================================================================
+		     SECCIÓN SOBRE MÍ DUAL
+		     ========================================================================== -->
+		<section id="about" class="py-20 bg-brand-bg-secondary relative transition-colors duration-300 border-t border-brand-border" aria-labelledby="about-title">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+					
+					<!-- Imagen Secundaria -->
+					<div class="lg:col-span-5 flex justify-center" data-aos="fade-right" data-aos-duration="1000">
+						<div class="relative w-full max-w-[320px] aspect-[4/5] overflow-hidden rounded-2xl border border-brand-border shadow-xl">
+							<img src="assets/images/claudio_closeup.jpg" alt="Claudio Ceppi - Perfil Profesional" width="320" height="400" loading="lazy" class="w-full h-full object-cover">
+						</div>
+					</div>
+
+					<!-- Texto Sobre Mí: Modo Hospitality -->
+					<div class="lg:col-span-7 space-y-6 persona-hospitality-only fade-persona" data-aos="fade-left" data-aos-duration="1000">
+						<span class="text-brand-gold uppercase tracking-[0.2em] text-xs font-semibold block" data-i18n="hosp_about_tag">Sobre Mí</span>
+						<h2 id="about-title" class="font-serif text-3xl sm:text-4xl md:text-5xl leading-tight" data-i18n="hosp_about_headline">
+							Comprometido con la <br><span class="text-brand-gold italic">Excelencia en el Servicio</span>
+						</h2>
+						<p class="text-brand-text-secondary text-sm md:text-base font-light leading-relaxed transition-colors duration-300" data-i18n="hosp_about_p1">
+							Soy un profesional de la gastronomía apasionado por la hospitalidad con una amplia trayectoria en servicio al cliente y gestión de sala. Mi enfoque se centra en crear experiencias memorables para cada comensal mediante la excelencia en el servicio, la motivación del equipo de trabajo y el control impecable de cada operación.
+						</p>
+						<p class="text-brand-text-secondary text-sm md:text-base font-light leading-relaxed transition-colors duration-300" data-i18n="hosp_about_p2">
+							A lo largo de mi carrera en España y Sudamérica, he perfeccionado mis habilidades para liderar equipos dinámicos, coordinar operaciones de front-of-house, gestionar stock e inventarios, y asegurar que cada interacción con el cliente fidelice su relación con el negocio.
+						</p>
+						<div class="grid grid-cols-2 gap-6 pt-4 border-t border-brand-border">
+							<div>
+								<span class="font-serif text-3xl md:text-4xl text-brand-gold font-bold block" data-i18n="hosp_stat_1_val">10+</span>
+								<span class="text-xs uppercase tracking-wider text-brand-text-secondary" data-i18n="hosp_stat_1_lbl">Años de Trayectoria</span>
+							</div>
+							<div>
+								<span class="font-serif text-3xl md:text-4xl text-brand-gold font-bold block" data-i18n="hosp_stat_2_val">100%</span>
+								<span class="text-xs uppercase tracking-wider text-brand-text-secondary" data-i18n="hosp_stat_2_lbl">Orientado al Comensal</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- Texto Sobre Mí: Modo Developer -->
+					<div class="lg:col-span-7 space-y-6 persona-developer-only fade-persona" data-aos="fade-left" data-aos-duration="1000">
+						<span class="text-tech-cyan font-mono uppercase tracking-[0.2em] text-xs font-semibold block" data-i18n="dev_about_tag">Sobre Mí</span>
+						<h2 class="font-sans font-bold text-3xl sm:text-4xl md:text-5xl leading-tight" data-i18n="dev_about_headline">
+							Diseño y Código con <br><span class="text-tech-cyan">Criterio de Alto Rendimiento</span>
+						</h2>
+						<p class="text-brand-text-secondary text-sm md:text-base font-light leading-relaxed transition-colors duration-300" data-i18n="dev_about_p1">
+							Construyo soluciones digitales con estándares estrictos de ingeniería: código limpio, accesibilidad universal (WCAG 2.1 AA), optimización de Core Web Vitals y arquitecturas basadas en agentes de IA y automatización.
+						</p>
+						<p class="text-brand-text-secondary text-sm md:text-base font-light leading-relaxed transition-colors duration-300" data-i18n="dev_about_p2">
+							Mi experiencia abarca desde el desarrollo de interfaces interactivas y landing pages de alta gama hasta aplicaciones de escritorio/CLI en Python y despliegues escalables en Google Cloud Platform y Firebase Hosting.
+						</p>
+						<div class="grid grid-cols-2 gap-6 pt-4 border-t border-brand-border">
+							<div>
+								<span class="font-mono text-3xl md:text-4xl text-tech-cyan font-bold block" data-i18n="dev_stat_1_val">100%</span>
+								<span class="text-xs uppercase tracking-wider text-brand-text-secondary" data-i18n="dev_stat_1_lbl">Lighthouse A11y</span>
+							</div>
+							<div>
+								<span class="font-mono text-3xl md:text-4xl text-tech-emerald font-bold block" data-i18n="dev_stat_2_val">14+</span>
+								<span class="text-xs uppercase tracking-wider text-brand-text-secondary" data-i18n="dev_stat_2_lbl">Tests Unitarios CLI</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ==========================================================================
+		     SECCIÓN TRAYECTORIA / PROYECTOS DUAL
+		     ========================================================================== -->
+		<section id="experience" class="py-24 bg-brand-bg-primary relative transition-colors duration-300" aria-labelledby="exp-headline">
+			<div class="max-w-7xl mx-auto px-6">
+				
+				<!-- TIMELINE DE HOSTELERÍA (MODO HOSPITALITY) -->
+				<div class="persona-hospitality-only fade-persona">
+					<div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+						<span class="text-brand-gold uppercase tracking-[0.2em] text-xs font-semibold block mb-2" data-i18n="hosp_exp_tag">Trayectoria</span>
+						<h2 id="exp-headline" class="font-serif text-4xl md:text-5xl" data-i18n="hosp_exp_headline">Experiencia en Hostelería</h2>
+					</div>
+
+					<div class="relative border-l-2 border-brand-gold/30 ml-4 md:ml-32 space-y-12 pl-6 md:pl-10">
+						<!-- Bloque 1: The Players -->
+						<div class="relative group" data-aos="fade-up">
+							<div class="absolute -left-[31px] md:-left-[47px] top-1.5 w-4 h-4 rounded-full bg-brand-gold border-4 border-brand-bg-primary"></div>
+							<span class="text-brand-gold font-semibold text-xs tracking-widest block mb-1" data-i18n="hosp_exp_date_1">OCT 2024 - ABR 2025</span>
+							<h3 class="text-xl font-serif text-brand-text-primary">The Players <span class="text-xs text-brand-text-secondary italic font-sans" data-i18n="hosp_exp_loc_1">— Murcia, España</span></h3>
+							<h4 class="text-brand-gold text-xs uppercase tracking-wider font-semibold my-1.5" data-i18n="hosp_role_1">Servicio al Cliente y Bartender</h4>
+							<p class="text-brand-text-secondary text-sm font-light leading-relaxed max-w-2xl" data-i18n="hosp_desc_1">
+								Destaco en el servicio al cliente directo y en el manejo de la barra de forma rápida y eficiente, asegurando altos estándares de hospitalidad y ritmo operativo fluido.
+							</p>
+						</div>
+
+						<!-- Bloque 2: Amarcord -->
+						<div class="relative group" data-aos="fade-up">
+							<div class="absolute -left-[31px] md:-left-[47px] top-1.5 w-4 h-4 rounded-full bg-brand-gold border-4 border-brand-bg-primary"></div>
+							<span class="text-brand-gold font-semibold text-xs tracking-widest block mb-1" data-i18n="hosp_exp_date_2">SEP 2022 - FEB 2024</span>
+							<h3 class="text-xl font-serif text-brand-text-primary">Amarcord Trattoria <span class="text-xs text-brand-text-secondary italic font-sans" data-i18n="hosp_exp_loc_2">— Lima, Perú</span></h3>
+							<h4 class="text-brand-gold text-xs uppercase tracking-wider font-semibold my-1.5" data-i18n="hosp_role_2">Jefe de Sala / Manager</h4>
+							<p class="text-brand-text-secondary text-sm font-light leading-relaxed max-w-2xl" data-i18n="hosp_desc_2">
+								Lideré el personal de salón de cara al público, supervisando la inducción de nuevos empleados y garantizando una atención excepcional. Responsable de la gestión de caja, inventarios de alta precisión y control de almacén.
+							</p>
+						</div>
+
+						<!-- Bloque 3: La P'tite France -->
+						<div class="relative group" data-aos="fade-up">
+							<div class="absolute -left-[31px] md:-left-[47px] top-1.5 w-4 h-4 rounded-full bg-brand-gold border-4 border-brand-bg-primary"></div>
+							<span class="text-brand-gold font-semibold text-xs tracking-widest block mb-1" data-i18n="hosp_exp_date_3">ABR 2021 - AGO 2022</span>
+							<h3 class="text-xl font-serif text-brand-text-primary">La P'tite France <span class="text-xs text-brand-text-secondary italic font-sans" data-i18n="hosp_exp_loc_3">— Lima, Perú</span></h3>
+							<h4 class="text-brand-gold text-xs uppercase tracking-wider font-semibold my-1.5" data-i18n="hosp_role_3">Representante de Servicio al Cliente</h4>
+							<p class="text-brand-text-secondary text-sm font-light leading-relaxed max-w-2xl" data-i18n="hosp_desc_3">
+								Ofrecí una atención de primer nivel en un entorno gastronómico exigente, encargándome adicionalmente del manejo eficiente de caja con arqueos sumamente precisos.
+							</p>
+						</div>
+
+						<!-- Bloque 4: Café In -->
+						<div class="relative group" data-aos="fade-up">
+							<div class="absolute -left-[31px] md:-left-[47px] top-1.5 w-4 h-4 rounded-full bg-brand-gold border-4 border-brand-bg-primary"></div>
+							<span class="text-brand-gold font-semibold text-xs tracking-widest block mb-1" data-i18n="hosp_exp_date_4">MAR 2017 - MAR 2020</span>
+							<h3 class="text-xl font-serif text-brand-text-primary">Café In <span class="text-xs text-brand-text-secondary italic font-sans" data-i18n="hosp_exp_loc_4">— Lima, Perú</span></h3>
+							<h4 class="text-brand-gold text-xs uppercase tracking-wider font-semibold my-1.5" data-i18n="hosp_role_4">Store Manager / Gerente de Tienda</h4>
+							<p class="text-brand-text-secondary text-sm font-light leading-relaxed max-w-2xl" data-i18n="hosp_desc_4">
+								Gestión de las operaciones completas de la cafetería, garantizando la eficiencia en el servicio y la satisfacción del cliente. Supervisé stock, logística de almacén y manejo responsable de finanzas de caja.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- SHOWCASE DE PROYECTOS TECH (MODO DEVELOPER) -->
+				<div class="persona-developer-only fade-persona">
+					<div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+						<span class="text-tech-cyan font-mono uppercase tracking-[0.2em] text-xs font-semibold block mb-2" data-i18n="dev_projects_tag">Portfolio Digital</span>
+						<h2 class="font-sans font-bold text-4xl md:text-5xl" data-i18n="dev_projects_headline">Proyectos en Producción</h2>
+					</div>
+
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+						<!-- Proyecto 1: Mau Ceppi NYC -->
+						<article class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up">
+							<div>
+								<div class="flex justify-between items-start mb-3">
+									<span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-tech-cyan bg-tech-cyan/10 px-2.5 py-1 rounded" data-i18n="dev_proj_1_tag">Dark Cyber-Editorial / Web</span>
+									<span class="text-xs text-emerald-400 font-mono">● Live Prod</span>
+								</div>
+								<h3 class="text-xl font-bold text-brand-text-primary mb-2" data-i18n="dev_proj_1_title">Mau Ceppi // Funktaxi 1533 (NYC)</h3>
+								<p class="text-brand-text-secondary text-xs sm:text-sm font-light leading-relaxed mb-4" data-i18n="dev_proj_1_desc">
+									Portfolio inmersivo para el Visual Alchemist radicado en NYC. Animaciones fluidas GSAP, captura de leads en Google Cloud Firestore y Schema.org completo.
+								</p>
+							</div>
+							<div class="pt-4 border-t border-brand-border flex justify-between items-center">
+								<span class="text-[11px] font-mono text-brand-text-secondary">GSAP • Firestore • Web Audio</span>
+								<a href="https://mau-landing.web.app" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-tech-cyan hover:underline inline-flex items-center">
+									<span data-i18n="dev_proj_1_link">Ver en Vivo</span> <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-[10px]"></i>
+								</a>
+							</div>
+						</article>
+
+						<!-- Proyecto 2: Chiara Coppola -->
+						<article class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+							<div>
+								<div class="flex justify-between items-start mb-3">
+									<span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-brand-gold bg-brand-gold/10 px-2.5 py-1 rounded" data-i18n="dev_proj_2_tag">Haute Couture Atelier / A11y</span>
+									<span class="text-xs text-emerald-400 font-mono">● Live Prod</span>
+								</div>
+								<h3 class="text-xl font-bold text-brand-text-primary mb-2" data-i18n="dev_proj_2_title">Chiara Coppola Atelier</h3>
+								<p class="text-brand-text-secondary text-xs sm:text-sm font-light leading-relaxed mb-4" data-i18n="dev_proj_2_desc">
+									Landing page de alta gama para atelier de costura a medida. Cumplimiento WCAG 2.1 AA, integración automatizada vía WhatsApp Business y diseño editorial.
+								</p>
+							</div>
+							<div class="pt-4 border-t border-brand-border flex justify-between items-center">
+								<span class="text-[11px] font-mono text-brand-text-secondary">WCAG 2.1 AA • WhatsApp • SEO</span>
+								<a href="https://chiara-coppola.web.app" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-tech-cyan hover:underline inline-flex items-center">
+									<span data-i18n="dev_proj_2_link">Ver en Vivo</span> <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-[10px]"></i>
+								</a>
+							</div>
+						</article>
+
+						<!-- Proyecto 3: Expense Tracker CLI -->
+						<article class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+							<div>
+								<div class="flex justify-between items-start mb-3">
+									<span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-tech-emerald bg-tech-emerald/10 px-2.5 py-1 rounded" data-i18n="dev_proj_3_tag">Python CLI & Web GUI</span>
+									<span class="text-xs text-brand-text-secondary font-mono">14/14 Tests ✓</span>
+								</div>
+								<h3 class="text-xl font-bold text-brand-text-primary mb-2" data-i18n="dev_proj_3_title">Expense Tracker CLI</h3>
+								<p class="text-brand-text-secondary text-xs sm:text-sm font-light leading-relaxed mb-4" data-i18n="dev_proj_3_desc">
+									Gestor de gastos multiusuario en Python con cifrado Fernet AES-128, interfaz dual CLI/Web y 14 tests unitarios automatizados pasando al 100%.
+								</p>
+							</div>
+							<div class="pt-4 border-t border-brand-border flex justify-between items-center">
+								<span class="text-[11px] font-mono text-brand-text-secondary">Python 3 • Fernet AES • Pytest</span>
+								<a href="https://github.com/ClaudioCeppi83" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-tech-cyan hover:underline inline-flex items-center">
+									<span data-i18n="dev_proj_3_link">GitHub Repo</span> <i class="fa-brands fa-github ml-1.5 text-[11px]"></i>
+								</a>
+							</div>
+						</article>
+
+						<!-- Proyecto 4: Text Editor Core -->
+						<article class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+							<div>
+								<div class="flex justify-between items-start mb-3">
+									<span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-400/10 px-2.5 py-1 rounded" data-i18n="dev_proj_4_tag">Core Engine / Data Structures</span>
+									<span class="text-xs text-brand-text-secondary font-mono">54 Tests ✓</span>
+								</div>
+								<h3 class="text-xl font-bold text-brand-text-primary mb-2" data-i18n="dev_proj_4_title">Text Editor Core</h3>
+								<p class="text-brand-text-secondary text-xs sm:text-sm font-light leading-relaxed mb-4" data-i18n="dev_proj_4_desc">
+									Motor de buffer de texto bidimensional implementado en Python con gestión de cursores, historial de deshacer/rehacer y 54 pruebas unitarias.
+								</p>
+							</div>
+							<div class="pt-4 border-t border-brand-border flex justify-between items-center">
+								<span class="text-[11px] font-mono text-brand-text-secondary">Python • OOP • Unit Testing</span>
+								<a href="https://github.com/ClaudioCeppi83" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-tech-cyan hover:underline inline-flex items-center">
+									<span data-i18n="dev_proj_4_link">GitHub Repo</span> <i class="fa-brands fa-github ml-1.5 text-[11px]"></i>
+								</a>
+							</div>
+						</article>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- ==========================================================================
+		     SECCIÓN HABILIDADES DUAL
+		     ========================================================================== -->
+		<section id="skills" class="py-20 bg-brand-bg-secondary relative transition-colors duration-300 border-t border-brand-border" aria-labelledby="skills-headline">
+			<div class="max-w-7xl mx-auto px-6">
+				
+				<!-- HABILIDADES MODO HOSPITALITY -->
+				<div class="persona-hospitality-only fade-persona">
+					<div class="text-center max-w-3xl mx-auto mb-12">
+						<span class="text-brand-gold uppercase tracking-[0.2em] text-xs font-semibold block mb-2" data-i18n="hosp_skills_tag">Habilidades</span>
+						<h2 id="skills-headline" class="font-serif text-4xl md:text-5xl" data-i18n="hosp_skills_headline">Competencias de Sala & Gestión</h2>
+					</div>
+					<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+						<div class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-all duration-300">
+							<div class="w-10 h-10 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center mb-4 text-lg">
+								<i class="fa-solid fa-utensils"></i>
+							</div>
+							<h3 class="font-serif text-lg text-brand-text-primary mb-2" data-i18n="hosp_skill_t1">Gestión de Sala</h3>
+							<p class="text-brand-text-secondary text-xs leading-relaxed" data-i18n="hosp_skill_d1">Supervisión de dinámica de salón, tiempos de servicio y atención al comensal VIP.</p>
+						</div>
+						<div class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-all duration-300">
+							<div class="w-10 h-10 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center mb-4 text-lg">
+								<i class="fa-solid fa-cash-register"></i>
+							</div>
+							<h3 class="font-serif text-lg text-brand-text-primary mb-2" data-i18n="hosp_skill_t2">Arqueos & Stock</h3>
+							<p class="text-brand-text-secondary text-xs leading-relaxed" data-i18n="hosp_skill_d2">Conciliaciones de caja de alta precisión, inventarios y optimización de mermas.</p>
+						</div>
+						<div class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-all duration-300">
+							<div class="w-10 h-10 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center mb-4 text-lg">
+								<i class="fa-solid fa-wine-bottle"></i>
+							</div>
+							<h3 class="font-serif text-lg text-brand-text-primary mb-2" data-i18n="hosp_skill_t3">Enología & Protocolo</h3>
+							<p class="text-brand-text-secondary text-xs leading-relaxed" data-i18n="hosp_skill_d3">Maridaje, servicio formal de mesa y coctelería clásica y de autor.</p>
+						</div>
+						<div class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-all duration-300">
+							<div class="w-10 h-10 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center mb-4 text-lg">
+								<i class="fa-solid fa-users"></i>
+							</div>
+							<h3 class="font-serif text-lg text-brand-text-primary mb-2" data-i18n="hosp_skill_t4">Liderazgo & APPCC</h3>
+							<p class="text-brand-text-secondary text-xs leading-relaxed" data-i18n="hosp_skill_d4">Capacitación de personal, resolución de incidencias y cumplimiento sanitario.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- HABILIDADES MODO DEVELOPER -->
+				<div class="persona-developer-only fade-persona">
+					<div class="text-center max-w-3xl mx-auto mb-12">
+						<span class="text-tech-cyan font-mono uppercase tracking-[0.2em] text-xs font-semibold block mb-2" data-i18n="dev_skills_tag">Stack Tecnológico</span>
+						<h2 class="font-sans font-bold text-4xl md:text-5xl" data-i18n="dev_skills_headline">Habilidades & Herramientas</h2>
+					</div>
+					<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+						<div class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/40 transition-all duration-300">
+							<div class="w-10 h-10 rounded-lg bg-tech-cyan/10 text-tech-cyan flex items-center justify-center mb-4 text-lg font-mono">
+								<i class="fa-brands fa-html5"></i>
+							</div>
+							<h3 class="font-sans font-bold text-base text-brand-text-primary mb-2" data-i18n="dev_skill_t1">Frontend & Web Architecture</h3>
+							<p class="text-brand-text-secondary text-xs leading-relaxed" data-i18n="dev_skill_d1">HTML5 Semántico, Tailwind CSS v4, Vanilla JavaScript (ES6+), GSAP Motion.</p>
+						</div>
+						<div class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/40 transition-all duration-300">
+							<div class="w-10 h-10 rounded-lg bg-tech-cyan/10 text-tech-cyan flex items-center justify-center mb-4 text-lg font-mono">
+								<i class="fa-solid fa-universal-access"></i>
+							</div>
+							<h3 class="font-sans font-bold text-base text-brand-text-primary mb-2" data-i18n="dev_skill_t2">Accesibilidad & Performance</h3>
+							<p class="text-brand-text-secondary text-xs leading-relaxed" data-i18n="dev_skill_d2">Estándares WCAG 2.1 AA, Core Web Vitals, navegación por teclado y Focus Trap.</p>
+						</div>
+						<div class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/40 transition-all duration-300">
+							<div class="w-10 h-10 rounded-lg bg-tech-emerald/10 text-tech-emerald flex items-center justify-center mb-4 text-lg font-mono">
+								<i class="fa-brands fa-python"></i>
+							</div>
+							<h3 class="font-sans font-bold text-base text-brand-text-primary mb-2" data-i18n="dev_skill_t3">Python & Tooling</h3>
+							<p class="text-brand-text-secondary text-xs leading-relaxed" data-i18n="dev_skill_d3">Desarrollo CLI/GUI, Criptografía (Fernet AES), Pytest y OOP.</p>
+						</div>
+						<div class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/40 transition-all duration-300">
+							<div class="w-10 h-10 rounded-lg bg-indigo-400/10 text-indigo-400 flex items-center justify-center mb-4 text-lg font-mono">
+								<i class="fa-solid fa-cloud"></i>
+							</div>
+							<h3 class="font-sans font-bold text-base text-brand-text-primary mb-2" data-i18n="dev_skill_t4">Cloud & DevOps</h3>
+							<p class="text-brand-text-secondary text-xs leading-relaxed" data-i18n="dev_skill_d4">Google Cloud, Firebase Hosting & Firestore, Schema.org JSON-LD y Git.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- ==========================================================================
+		     ⚡ SECCIÓN COMPARTIDA: THE GASTROTECH NEXUS (CONVERGENCIA)
+		     ========================================================================== -->
+		<section id="nexus" class="py-24 bg-brand-bg-primary relative transition-colors duration-300 border-t border-brand-border" aria-labelledby="nexus-headline">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="max-w-4xl mx-auto text-center space-y-6" data-aos="zoom-in" data-aos-duration="1000">
+					<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-gold/10 border border-brand-gold/30 text-brand-gold text-xs font-semibold uppercase tracking-widest">
+						<i class="fa-solid fa-bolt text-xs"></i>
+						<span data-i18n="nexus_tag">The Nexus // GastroTech</span>
+					</div>
+					
+					<h2 id="nexus-headline" class="font-serif text-3xl sm:text-4xl md:text-5xl leading-tight" data-i18n="nexus_headline">
+						Donde la Hostelería se encuentra con el <span class="text-brand-gold italic">Código</span>
+					</h2>
+
+					<blockquote class="text-base sm:text-lg text-brand-text-secondary font-light italic leading-relaxed pt-2">
+						<p data-i18n="nexus_manifesto">
+							"La mayoría de los desarrolladores nunca han sentido la presión de un salón con 200 comensales un sábado por la noche. Y la mayoría de los hosteleros no saben cómo programar una solución que elimine sus cuellos de botella operativos. Mi propuesta de valor es unir ambos mundos para crear tecnología gastronómica que realmente funciona sobre el terreno."
+						</p>
+					</blockquote>
+
+					<!-- Tarjetas de Proyectos GastroTech en Desarrollo -->
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10 text-left">
+						<div class="p-5 rounded-xl bg-brand-card-bg border border-brand-border">
+							<h3 class="font-bold text-sm text-brand-gold mb-1" data-i18n="nexus_proj_1_title">gastro-data</h3>
+							<p class="text-xs text-brand-text-secondary leading-relaxed font-light" data-i18n="nexus_proj_1_desc">
+								Dashboard de inteligencia operativa y rentabilidad para hostelería, escandallos y control de mermas.
+							</p>
+						</div>
+						<div class="p-5 rounded-xl bg-brand-card-bg border border-brand-border">
+							<h3 class="font-bold text-sm text-brand-gold mb-1" data-i18n="nexus_proj_2_title">alesso-saludable</h3>
+							<p class="text-xs text-brand-text-secondary leading-relaxed font-light" data-i18n="nexus_proj_2_desc">
+								Plataforma web gastronómica multilingüe italiana con gestión de recetas y cálculo nutricional.
+							</p>
+						</div>
+						<div class="p-5 rounded-xl bg-brand-card-bg border border-brand-border">
+							<h3 class="font-bold text-sm text-brand-gold mb-1" data-i18n="nexus_proj_3_title">Digitalización F&B a Medida</h3>
+							<p class="text-xs text-brand-text-secondary leading-relaxed font-light" data-i18n="nexus_proj_3_desc">
+								Menús interactivos, reservas directas sin comisiones de plataformas y optimización de márgenes.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ==========================================================================
+		     FORMACIÓN E IDIOMAS
+		     ========================================================================== -->
+		<section class="py-16 bg-brand-bg-secondary relative transition-colors duration-300 border-t border-brand-border">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+					
+					<!-- Educación -->
+					<div class="space-y-6">
+						<span class="text-brand-gold uppercase tracking-[0.2em] text-xs font-semibold block" data-i18n="edu_tag">Formación</span>
+						<h2 class="font-serif text-3xl" data-i18n="edu_headline">Educación & Certificaciones</h2>
+						<div class="space-y-4">
+							<div class="p-4 rounded-lg bg-brand-card-bg border border-brand-border">
+								<h3 class="font-semibold text-sm text-brand-text-primary" data-i18n="edu_degree_1">Profesional en Negocios Gastronómicos</h3>
+								<span class="text-xs text-brand-text-secondary block italic" data-i18n="edu_inst_1">Instituto Gastronómico Cuisine Art, Venezuela</span>
+							</div>
+							<div class="p-4 rounded-lg bg-brand-card-bg border border-brand-border">
+								<h3 class="font-semibold text-sm text-brand-text-primary" data-i18n="edu_degree_2">Curso de Hostelería y Protocolo</h3>
+								<span class="text-xs text-brand-text-secondary block italic" data-i18n="edu_inst_2">Eh! Escuela de Hostelería | Cáritas (Murcia, España)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- Idiomas -->
+					<div class="space-y-6">
+						<span class="text-brand-gold uppercase tracking-[0.2em] text-xs font-semibold block" data-i18n="lang_title">Idiomas</span>
+						<h2 class="font-serif text-3xl">Competencia Lingüística</h2>
+						<div class="space-y-4">
+							<div class="p-4 rounded-lg bg-brand-card-bg border border-brand-border flex justify-between items-center">
+								<div>
+									<h3 class="font-semibold text-sm text-brand-text-primary" data-i18n="lang_es">Español</h3>
+									<span class="text-xs text-brand-text-secondary" data-i18n="lang_es_level">Nativo</span>
+								</div>
+								<span class="text-xs font-semibold px-2.5 py-1 bg-brand-gold/10 text-brand-gold rounded">Nativo</span>
+							</div>
+							<div class="p-4 rounded-lg bg-brand-card-bg border border-brand-border flex justify-between items-center">
+								<div>
+									<h3 class="font-semibold text-sm text-brand-text-primary" data-i18n="lang_en">Inglés</h3>
+									<span class="text-xs text-brand-text-secondary" data-i18n="lang_en_level">EF SET C1 (68/100)</span>
+								</div>
+								<span class="text-xs font-semibold px-2.5 py-1 bg-brand-gold/10 text-brand-gold rounded">C1 Avanzado</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- ==========================================================================
+		     GALERÍA PERSONAL
+		     ========================================================================== -->
+		<section id="gallery" class="py-20 bg-brand-bg-primary relative transition-colors duration-300 border-t border-brand-border" aria-labelledby="gal-headline">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center max-w-3xl mx-auto mb-12">
+					<span class="text-brand-gold uppercase tracking-[0.2em] text-xs font-semibold block mb-2" data-i18n="gal_tag">Galería</span>
+					<h2 id="gal-headline" class="font-serif text-4xl md:text-5xl" data-i18n="gal_headline">Retratos Profesionales</h2>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div class="aspect-[4/5] rounded-xl overflow-hidden border border-brand-border shadow-lg">
+						<img src="assets/images/claudio_portrait.jpg" alt="Claudio Ceppi - Corporativo" width="400" height="500" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+					</div>
+					<div class="aspect-[4/5] rounded-xl overflow-hidden border border-brand-border shadow-lg">
+						<img src="assets/images/claudio_closeup.jpg" alt="Claudio Ceppi - Headshot Profesional" width="400" height="500" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+					</div>
+					<div class="aspect-[4/5] rounded-xl overflow-hidden border border-brand-border shadow-lg">
+						<img src="assets/images/claudio_casual.jpg" alt="Claudio Ceppi - Estilo Contemporáneo" width="400" height="500" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ==========================================================================
+		     SECCIÓN CONTACTO
+		     ========================================================================== -->
+		<section id="contact" class="py-24 bg-brand-bg-secondary relative transition-colors duration-300 border-t border-brand-border" aria-labelledby="contact-headline">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+					
+					<!-- Información de Contacto Directo -->
+					<div class="lg:col-span-5 space-y-6">
+						<span class="text-brand-gold uppercase tracking-[0.2em] text-xs font-semibold block" data-i18n="contact_tag">Contacto</span>
+						<h2 id="contact-headline" class="font-serif text-4xl md:text-5xl" data-i18n="contact_headline">Hablemos</h2>
+						<p class="text-brand-text-secondary text-sm font-light leading-relaxed" data-i18n="contact_sub">
+							¿Interesado en colaborar en dirección de sala o en el desarrollo de un proyecto digital? Envíame un mensaje.
+						</p>
+						<div class="space-y-4 pt-4">
+							<a href="tel:+34641511740" class="flex items-center gap-3 text-sm text-brand-text-primary hover:text-brand-gold transition-colors">
+								<div class="w-10 h-10 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center">
+									<i class="fa-solid fa-phone"></i>
+								</div>
+								<div>
+									<span class="text-xs text-brand-text-secondary block" data-i18n="contact_phone_lbl">Teléfono</span>
+									<span class="font-semibold">+34 641 511 740</span>
+								</div>
+							</a>
+							<a href="mailto:erceppi@gmail.com" class="flex items-center gap-3 text-sm text-brand-text-primary hover:text-brand-gold transition-colors">
+								<div class="w-10 h-10 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center">
+									<i class="fa-solid fa-envelope"></i>
+								</div>
+								<div>
+									<span class="text-xs text-brand-text-secondary block" data-i18n="contact_email_lbl">Correo Electrónico</span>
+									<span class="font-semibold">erceppi@gmail.com</span>
+								</div>
+							</a>
+							<a href="https://github.com/ClaudioCeppi83" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-sm text-brand-text-primary hover:text-brand-gold transition-colors">
+								<div class="w-10 h-10 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center">
+									<i class="fa-brands fa-github"></i>
+								</div>
+								<div>
+									<span class="text-xs text-brand-text-secondary block">GitHub</span>
+									<span class="font-semibold">github.com/ClaudioCeppi83</span>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<!-- Formulario de Contacto -->
+					<div class="lg:col-span-7 bg-brand-card-bg border border-brand-border rounded-2xl p-6 sm:p-8 shadow-xl">
+						<form id="contact-form" class="space-y-4">
+							<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+								<div>
+									<label for="form-name" class="block text-xs uppercase tracking-wider text-brand-text-secondary mb-1.5" data-i18n="form_name">Nombre Completo</label>
+									<input type="text" id="form-name" required class="w-full bg-brand-bg-primary border border-brand-border rounded px-4 py-2.5 text-sm text-brand-text-primary focus:outline-none focus:border-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold">
+								</div>
+								<div>
+									<label for="form-email" class="block text-xs uppercase tracking-wider text-brand-text-secondary mb-1.5" data-i18n="form_email">Correo Electrónico</label>
+									<input type="email" id="form-email" required class="w-full bg-brand-bg-primary border border-brand-border rounded px-4 py-2.5 text-sm text-brand-text-primary focus:outline-none focus:border-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold">
+								</div>
+							</div>
+							<div>
+								<label for="form-subject" class="block text-xs uppercase tracking-wider text-brand-text-secondary mb-1.5" data-i18n="form_subject">Asunto</label>
+								<input type="text" id="form-subject" required class="w-full bg-brand-bg-primary border border-brand-border rounded px-4 py-2.5 text-sm text-brand-text-primary focus:outline-none focus:border-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold">
+							</div>
+							<div>
+								<label for="form-msg" class="block text-xs uppercase tracking-wider text-brand-text-secondary mb-1.5" data-i18n="form_msg">Mensaje</label>
+								<textarea id="form-msg" rows="4" required class="w-full bg-brand-bg-primary border border-brand-border rounded px-4 py-2.5 text-sm text-brand-text-primary focus:outline-none focus:border-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold resize-none"></textarea>
+							</div>
+							<button type="submit" class="btn-hover w-full bg-brand-gold text-brand-dark py-3.5 rounded font-semibold text-xs uppercase tracking-widest">
+								<span data-i18n="form_submit_btn">Enviar Mensaje</span> <i class="fa-regular fa-paper-plane ml-2"></i>
+							</button>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<!-- Footer -->
+	<footer class="bg-brand-bg-primary py-8 border-t border-brand-border text-center text-xs text-brand-text-secondary">
+		<div class="max-w-7xl mx-auto px-6 space-y-2">
+			<p class="font-serif text-brand-gold text-lg italic">Claudio Ceppi</p>
+			<p data-i18n="footer_copy">&copy; 2026 Claudio Ceppi. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+	<!-- Scripts Externos y Propios -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="js/translations.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
