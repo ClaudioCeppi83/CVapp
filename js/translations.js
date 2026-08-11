@@ -1,6 +1,6 @@
 /* ==========================================================================
    DICCIONARIO BILINGÜE COMPLETO (ES / EN) - DUAL PERSONA ARCHITECTURE
-   Claudio Ceppi: Hospitality & Floor Manager ⟷ Frontend & Software Developer
+   Claudio Ceppi: Hospitality & Floor Manager ⟷ Developer Autodidacta & Creador Digital
    (Datos 100% segregados e independientes por perfil profesional)
    ========================================================================== */
 
@@ -8,9 +8,9 @@ const lang_data = {
 	es: {
 		/* Metadatos */
 		meta_title_hospitality: "Claudio Ceppi | Jefe de Sala & Hospitality Management | Murcia",
-		meta_title_developer: "Claudio Ceppi | Frontend Engineer & Software Developer | Portfolio",
+		meta_title_developer: "Claudio Ceppi | Desarrollador Web & Creador Digital | Portfolio",
 		meta_desc_hospitality: "Portfolio profesional de Claudio Ceppi, especialista en dirección de sala, hospitalidad y optimización de operaciones gastronómicas con más de 10 años de experiencia.",
-		meta_desc_developer: "Portfolio de software de Claudio Ceppi. Desarrollador especializado en interfaces web accesibles (WCAG 2.1 AA), Tailwind CSS, JavaScript, Python y Cloud.",
+		meta_desc_developer: "Portfolio de desarrollo web de Claudio Ceppi. Creador de proyectos digitales, interfaces modernas con Tailwind CSS y JavaScript, utilidades Python y despliegues en la nube asistidos por IA.",
 		skip_link: "Saltar al contenido principal",
 
 		/* Navegación y Header */
@@ -92,32 +92,32 @@ const lang_data = {
 
 		hosp_contact_sub: "¿Buscas un gestor de sala, consultor para tu local gastronómico o manager de restaurante? Envíame un mensaje.",
 
-		/* ==================== 💻 MODO DEVELOPER (100% TECH / SOFTWARE) ==================== */
-		dev_hero_tag: "Frontend Engineer & Software Developer",
+		/* ==================== 💻 MODO DEVELOPER (100% AUTODIDACTA & ASISTIDO POR IA) ==================== */
+		dev_hero_tag: "Desarrollador Web & Creador Digital Autodidacta",
 		dev_hero_headline: "Claudio <br class='hidden sm:inline'><span class='text-tech-cyan'>Ceppi</span>",
-		dev_hero_desc: "Desarrollador de software enfocado en arquitecturas web accesibles (WCAG 2.1 AA), interfaces con Tailwind CSS & GSAP, herramientas CLI en Python y despliegues serverless en Google Cloud.",
+		dev_hero_desc: "Conceptualizo y desarrollo proyectos web y herramientas digitales de forma autodidacta, apoyándome en inteligencia artificial para pulir e implementar soluciones funcionales, código limpio y despliegues en la nube.",
 		dev_hero_btn_projects: "Ver Proyectos",
 		dev_hero_btn_contact: "Contactar",
-		dev_hero_badge: "Clean Architecture & Accesibilidad",
+		dev_hero_badge: "Desarrollo Autodidacta & IA Asistido",
 
 		dev_about_tag: "Sobre Mí",
-		dev_about_headline: "Diseño y Código con <br><span class='text-tech-cyan'>Criterio de Alto Rendimiento</span>",
-		dev_about_p1: "Construyo soluciones digitales con estándares estrictos de ingeniería: código limpio, accesibilidad universal (WCAG 2.1 AA), optimización de Core Web Vitals y metodologías basadas en agentes de IA y automatización.",
-		dev_about_p2: "Mi experiencia abarca desde el desarrollo de interfaces interactivas y landing pages de alta gama hasta aplicaciones de escritorio/CLI en Python y despliegues escalables en Google Cloud Platform y Firebase Hosting.",
+		dev_about_headline: "De la Idea a la Realidad: <br><span class='text-tech-cyan'>Creación Asistida por IA</span>",
+		dev_about_p1: "Soy un creador digital y desarrollador autodidacta. Mi enfoque consiste en concebir ideas claras, definir la arquitectura y la experiencia de usuario, y apoyarme en modelos avanzados de Inteligencia Artificial para generar y refinar código robusto, accesible y bien estructurado.",
+		dev_about_p2: "He desarrollado de principio a fin landing pages de alto impacto, herramientas CLI en Python con pruebas unitarias y despliegues en producción sobre Google Cloud Firebase, demostrando cómo la visión creativa combinada con la IA permite crear software de primer nivel.",
 		dev_stat_1_val: "100%",
-		dev_stat_1_lbl: "Lighthouse A11y",
-		dev_stat_2_val: "14+",
-		dev_stat_2_lbl: "Tests Unitarios CLI",
+		dev_stat_1_lbl: "Autodidacta & Práctico",
+		dev_stat_2_val: "4+",
+		dev_stat_2_lbl: "Proyectos en Prod",
 
 		dev_projects_tag: "Portfolio Digital",
 		dev_projects_headline: "Proyectos en Producción",
 		dev_proj_1_tag: "Dark Cyber-Editorial / Web",
 		dev_proj_1_title: "Mau Ceppi // Funktaxi 1533 (NYC)",
-		dev_proj_1_desc: "Portfolio inmersivo para el Visual Alchemist y pionero AV radicado en Nueva York (The Shed, Boiler Room, Cannes 2020). Animaciones fluidas GSAP, captura de leads en Google Cloud Firestore y Schema.org completo.",
+		dev_proj_1_desc: "Portfolio inmersivo para el Visual Alchemist radicado en Nueva York. Animaciones fluidas GSAP, captura de leads en Google Cloud Firestore y Schema.org completo.",
 		dev_proj_1_link: "Ver Proyecto en Vivo",
 		dev_proj_2_tag: "Haute Couture Atelier / A11y",
 		dev_proj_2_title: "Chiara Coppola Atelier",
-		dev_proj_2_desc: "Landing page de alta gama para atelier de costura a medida. Cumplimiento WCAG 2.1 AA, integración automatizada de leads vía WhatsApp Business y diseño editorial en tonos champaña.",
+		dev_proj_2_desc: "Landing page de alta gama para atelier de costura a medida. Cumplimiento WCAG 2.1 AA, integración automatizada de leads vía WhatsApp Business y diseño editorial.",
 		dev_proj_2_link: "Ver Proyecto en Vivo",
 		dev_proj_3_tag: "Python CLI & Web GUI",
 		dev_proj_3_title: "Expense Tracker CLI",
@@ -128,30 +128,30 @@ const lang_data = {
 		dev_proj_4_desc: "Motor de buffer de texto bidimensional implementado en Python con gestión de cursores, historial de deshacer/rehacer y suite de 54 pruebas unitarias.",
 		dev_proj_4_link: "Ver Repositorio",
 
-		dev_skills_tag: "Stack Tecnológico",
-		dev_skills_headline: "Habilidades & Herramientas",
-		dev_skill_t1: "Frontend & Web Architecture",
-		dev_skill_d1: "HTML5 Semántico, Tailwind CSS v4, Vanilla JavaScript (ES6+), GSAP Motion y Responsive Design.",
-		dev_skill_t2: "Accesibilidad & Performance",
-		dev_skill_d2: "Estándares WCAG 2.1 AA, Core Web Vitals (LCP/CLS/INP), navegación por teclado y Focus Trap.",
-		dev_skill_t3: "Python & Tooling",
-		dev_skill_d3: "Desarrollo CLI/GUI, Criptografía (Fernet AES), Pytest, estructuras de datos y POO.",
-		dev_skill_t4: "Cloud, SEO & DevOps",
-		dev_skill_d4: "Google Cloud Platform, Firebase Hosting & Firestore, Schema.org JSON-LD, Git y CI/CD.",
+		dev_skills_tag: "Herramientas & Flujo de Trabajo",
+		dev_skills_headline: "Metodología & Stack de Desarrollo",
+		dev_skill_t1: "Desarrollo Frontend & Web",
+		dev_skill_d1: "Estructura semántica HTML5, diseño moderno con Tailwind CSS, Vanilla JavaScript y GSAP.",
+		dev_skill_t2: "Ingeniería de Prompts & IA Asistida",
+		dev_skill_d2: "Conceptualización, refinamiento iterativo de código, depuración y automatización asistida por IA.",
+		dev_skill_t3: "Python & Lógica de Software",
+		dev_skill_d3: "Herramientas CLI, seguridad con cifrado Fernet AES, estructuras de datos y suites de tests.",
+		dev_skill_t4: "Cloud, Git & Despliegue",
+		dev_skill_d4: "Despliegues en Google Cloud Firebase Hosting, bases de datos Firestore, GitHub y SEO estructurado.",
 
-		dev_edu_tag: "Aprendizaje Continuo",
-		dev_edu_headline: "Certificados Digitales & Fundamentos Técnicos",
-		dev_edu_degree_1: "Desarrollo Web Moderno & Estándares W3C",
-		dev_edu_inst_1: "Certificaciones digitales, buenas prácticas frontend y accesibilidad universal WCAG 2.1 AA.",
-		dev_edu_degree_2: "Ingeniería de Software & Arquitectura",
-		dev_edu_inst_2: "Desarrollo de aplicaciones modulares, Clean Code, Python y despliegues serverless en Google Cloud.",
+		dev_edu_tag: "Formación Autodidacta",
+		dev_edu_headline: "Aprendizaje Continuo & Enfoque Práctico",
+		dev_edu_degree_1: "Desarrollo Web & Tecnologías Digitales",
+		dev_edu_inst_1: "Formación autodidacta continua mediante documentación oficial, práctica en proyectos reales y desarrollo asistido por IA.",
+		dev_edu_degree_2: "Flujos de Trabajo con Inteligencia Artificial",
+		dev_edu_inst_2: "Especialización práctica en el uso de modelos de lenguaje avanzados para acelerar y pulir implementaciones de software.",
 		dev_lang_title: "Idiomas en Entorno Tech",
 		dev_lang_es: "Español",
 		dev_lang_es_level: "Nativo (Documentación & Gestión)",
 		dev_lang_en: "Inglés",
 		dev_lang_en_level: "EF SET C1 (68/100) — Comunicación Técnica & Fluidez",
 
-		dev_contact_sub: "¿Interesado en colaborar en el desarrollo de software, interfaces web o arquitectura digital? Envíame un mensaje.",
+		dev_contact_sub: "¿Tienes una idea o proyecto web que quieras desarrollar? Envíame un mensaje y hablemos.",
 
 		/* ==================== ⚡ EL NEXO GASTROTECH (CONVERGENCIA) ==================== */
 		nexus_tag: "The Nexus // GastroTech",
@@ -183,9 +183,9 @@ const lang_data = {
 	en: {
 		/* Metadatos */
 		meta_title_hospitality: "Claudio Ceppi | Head of Waitstaff & Hospitality Manager | Portfolio",
-		meta_title_developer: "Claudio Ceppi | Frontend Engineer & Software Developer | Portfolio",
+		meta_title_developer: "Claudio Ceppi | Web Developer & Digital Creator | Portfolio",
 		meta_desc_hospitality: "Professional portfolio of Claudio Ceppi, specialist in front-of-house management, hospitality excellence, and F&B operations with 10+ years of experience.",
-		meta_desc_developer: "Software portfolio of Claudio Ceppi. Developer specialized in accessible web interfaces (WCAG 2.1 AA), Tailwind CSS, JavaScript, Python, and Cloud.",
+		meta_desc_developer: "Web development portfolio of Claudio Ceppi. Digital creator building modern web interfaces with Tailwind CSS and JavaScript, Python utilities, and AI-assisted cloud deployments.",
 		skip_link: "Skip to main content",
 
 		/* Navegación y Header */
@@ -267,22 +267,22 @@ const lang_data = {
 
 		hosp_contact_sub: "Looking for an expert floor manager, restaurant director, or service consultant? Drop me a message below.",
 
-		/* ==================== 💻 MODO DEVELOPER (100% TECH / SOFTWARE) ==================== */
-		dev_hero_tag: "Frontend Engineer & Software Developer",
+		/* ==================== 💻 MODO DEVELOPER (100% SELF-TAUGHT & AI-ASSISTED) ==================== */
+		dev_hero_tag: "Web Developer & Self-Taught Digital Creator",
 		dev_hero_headline: "Claudio <br class='hidden sm:inline'><span class='text-tech-cyan'>Ceppi</span>",
-		dev_hero_desc: "Software developer specializing in accessible web architectures (WCAG 2.1 AA), Tailwind CSS & GSAP interfaces, Python CLI tools, and serverless Google Cloud deployments.",
+		dev_hero_desc: "I conceptualize and build web projects and digital utilities through self-driven learning, leveraging artificial intelligence to refine ideas, write clean code, and ship to the cloud.",
 		dev_hero_btn_projects: "View Projects",
 		dev_hero_btn_contact: "Contact Me",
-		dev_hero_badge: "Clean Architecture & Accessibility",
+		dev_hero_badge: "Self-Taught & AI-Assisted Development",
 
 		dev_about_tag: "About Me",
-		dev_about_headline: "Design and Code with <br><span class='text-tech-cyan'>High-Performance Standards</span>",
-		dev_about_p1: "I build digital products with rigorous engineering standards: clean code, universal accessibility (WCAG 2.1 AA), Core Web Vitals optimization, and AI-agent automation workflows.",
-		dev_about_p2: "My background spans from interactive frontends and high-end landing pages to Python desktop/CLI applications and cloud deployments on Google Cloud Platform and Firebase Hosting.",
+		dev_about_headline: "From Concept to Reality: <br><span class='text-tech-cyan'>AI-Assisted Creation</span>",
+		dev_about_p1: "I am a digital creator and self-taught developer. My methodology is centered on formulating clear concepts, architecting intuitive user experiences, and utilizing state-of-the-art AI to generate and polish robust, accessible, and structured code.",
+		dev_about_p2: "I have created end-to-end high-impact landing pages, Python CLI tools with unit tests, and production deployments on Google Cloud Firebase, proving how visionary ideas combined with modern AI workflows deliver outstanding software.",
 		dev_stat_1_val: "100%",
-		dev_stat_1_lbl: "Lighthouse A11y",
-		dev_stat_2_val: "14+",
-		dev_stat_2_lbl: "CLI Unit Tests",
+		dev_stat_1_lbl: "Self-Taught & Hands-on",
+		dev_stat_2_val: "4+",
+		dev_stat_2_lbl: "Production Projects",
 
 		dev_projects_tag: "Digital Showcase",
 		dev_projects_headline: "Production Projects",
@@ -303,30 +303,30 @@ const lang_data = {
 		dev_proj_4_desc: "2D text buffer engine written in Python featuring coordinate-based cursor management, undo/redo history, and a 54 unit-test suite.",
 		dev_proj_4_link: "View Repository",
 
-		dev_skills_tag: "Tech Stack",
-		dev_skills_headline: "Capabilities & Tools",
-		dev_skill_t1: "Frontend & Web Architecture",
-		dev_skill_d1: "Semantic HTML5, Tailwind CSS v4, Vanilla JavaScript (ES6+), GSAP Motion, and Responsive Design.",
-		dev_skill_t2: "Accessibility & Performance",
-		dev_skill_d2: "WCAG 2.1 AA standards, Core Web Vitals (LCP/CLS/INP), keyboard navigation, and Focus Traps.",
-		dev_skill_t3: "Python & Tooling",
-		dev_skill_d3: "CLI/GUI development, Cryptography (Fernet AES), Pytest, data structures, and OOP.",
-		dev_skill_t4: "Cloud, SEO & DevOps",
-		dev_skill_d4: "Google Cloud Platform, Firebase Hosting & Firestore, Schema.org JSON-LD, Git, and CI/CD.",
+		dev_skills_tag: "Tools & Workflow",
+		dev_skills_headline: "Methodology & Development Stack",
+		dev_skill_t1: "Frontend & Web Development",
+		dev_skill_d1: "Semantic HTML5 structure, modern styling with Tailwind CSS, Vanilla JavaScript, and GSAP.",
+		dev_skill_t2: "Prompt Engineering & AI Assistance",
+		dev_skill_d2: "Concept definition, iterative code refinement, debugging, and AI-driven workflow execution.",
+		dev_skill_t3: "Python & Software Logic",
+		dev_skill_d3: "CLI utilities, security with Fernet AES encryption, data structures, and test suites.",
+		dev_skill_t4: "Cloud, Git & Deployment",
+		dev_skill_d4: "Deployments on Google Cloud Firebase Hosting, Firestore databases, GitHub, and structured SEO.",
 
-		dev_edu_tag: "Continuous Learning",
-		dev_edu_headline: "Digital Certifications & Technical Foundations",
-		dev_edu_degree_1: "Modern Web Development & W3C Standards",
-		dev_edu_inst_1: "Digital certifications, frontend best practices, and universal WCAG 2.1 AA accessibility.",
-		dev_edu_degree_2: "Software Engineering & Architecture",
-		dev_edu_inst_2: "Modular application design, Clean Code, Python, and serverless Google Cloud deployments.",
+		dev_edu_tag: "Self-Taught Learning",
+		dev_edu_headline: "Continuous Growth & Practical Hands-on Work",
+		dev_edu_degree_1: "Web Development & Digital Technologies",
+		dev_edu_inst_1: "Continuous self-directed learning via official documentation, hands-on building, and AI-assisted development.",
+		dev_edu_degree_2: "AI-Augmented Workflows",
+		dev_edu_inst_2: "Practical mastery in leveraging advanced AI models to accelerate and refine production-ready software.",
 		dev_lang_title: "Tech Environment Languages",
 		dev_lang_es: "Spanish",
 		dev_lang_es_level: "Native (Documentation & Management)",
 		dev_lang_en: "English",
 		dev_lang_en_level: "EF SET C1 (68/100) — Technical Communication & Fluency",
 
-		dev_contact_sub: "Interested in collaborating on software development, web interfaces, or digital architecture? Send me a message below.",
+		dev_contact_sub: "Have an idea or a web project you'd like to build? Drop me a message and let's talk.",
 
 		/* ==================== ⚡ THE GASTROTECH NEXUS (CONVERGENCE) ==================== */
 		nexus_tag: "The Nexus // GastroTech",
