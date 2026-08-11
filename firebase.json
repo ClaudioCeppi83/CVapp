@@ -8,6 +8,7 @@
 			"**/.*",
 			"**/node_modules/**",
 			"claudio ceppi/**",
+			"assets/raw_developer_images/**",
 			"package.json",
 			"package-lock.json"
 		],
