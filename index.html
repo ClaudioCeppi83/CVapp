@@ -164,9 +164,13 @@
 			<!-- Menú de Navegación de Escritorio -->
 			<nav class="hidden lg:flex space-x-6 text-xs uppercase tracking-widest" aria-label="Menú principal de escritorio">
 				<a href="#about" class="hover:text-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none rounded transition-colors duration-300" data-i18n="nav_about">Sobre Mí</a>
-				<a href="#experience" class="hover:text-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none rounded transition-colors duration-300" data-i18n="nav_experience">Trayectoria</a>
+				<a href="#experience" class="hover:text-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none rounded transition-colors duration-300">
+					<span class="persona-hospitality-only" data-i18n="nav_experience">Trayectoria</span>
+					<span class="persona-developer-only" data-i18n="nav_projects">Proyectos</span>
+				</a>
 				<a href="#skills" class="hover:text-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none rounded transition-colors duration-300" data-i18n="nav_skills">Habilidades</a>
 				<a href="#nexus" class="hover:text-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none rounded transition-colors duration-300 font-semibold" data-i18n="nav_nexus">Nexo GastroTech</a>
+				<a href="#education" class="hover:text-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none rounded transition-colors duration-300" data-i18n="nav_edu">Formación</a>
 				<a href="#gallery" class="hover:text-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none rounded transition-colors duration-300" data-i18n="nav_gallery">Galería</a>
 				<a href="#contact" class="hover:text-brand-gold focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none rounded transition-colors duration-300" data-i18n="nav_contact">Contacto</a>
 			</nav>
@@ -201,9 +205,13 @@
 		<!-- Menú Desplegable para Móviles -->
 		<nav id="mobile-menu" class="hidden lg:hidden bg-brand-bg-secondary border-b border-brand-border px-6 py-6 space-y-4 text-center transition-colors duration-300" aria-label="Menú principal móvil">
 			<a href="#about" onclick="toggle_menu()" class="block text-brand-text-primary hover:text-brand-gold py-2 border-b border-brand-border uppercase tracking-widest text-xs" data-i18n="nav_about">Sobre Mí</a>
-			<a href="#experience" onclick="toggle_menu()" class="block text-brand-text-primary hover:text-brand-gold py-2 border-b border-brand-border uppercase tracking-widest text-xs" data-i18n="nav_experience">Trayectoria</a>
+			<a href="#experience" onclick="toggle_menu()" class="block text-brand-text-primary hover:text-brand-gold py-2 border-b border-brand-border uppercase tracking-widest text-xs">
+				<span class="persona-hospitality-only" data-i18n="nav_experience">Trayectoria</span>
+				<span class="persona-developer-only" data-i18n="nav_projects">Proyectos</span>
+			</a>
 			<a href="#skills" onclick="toggle_menu()" class="block text-brand-text-primary hover:text-brand-gold py-2 border-b border-brand-border uppercase tracking-widest text-xs" data-i18n="nav_skills">Habilidades</a>
 			<a href="#nexus" onclick="toggle_menu()" class="block text-brand-text-primary hover:text-brand-gold py-2 border-b border-brand-border uppercase tracking-widest text-xs font-semibold" data-i18n="nav_nexus">Nexo GastroTech</a>
+			<a href="#education" onclick="toggle_menu()" class="block text-brand-text-primary hover:text-brand-gold py-2 border-b border-brand-border uppercase tracking-widest text-xs" data-i18n="nav_edu">Formación</a>
 			<a href="#gallery" onclick="toggle_menu()" class="block text-brand-text-primary hover:text-brand-gold py-2 border-b border-brand-border uppercase tracking-widest text-xs" data-i18n="nav_gallery">Galería</a>
 			<a href="#contact" onclick="toggle_menu()" class="block text-brand-text-primary hover:text-brand-gold py-2 uppercase tracking-widest text-xs" data-i18n="nav_contact">Contacto</a>
 			<div class="pt-2">
@@ -639,51 +647,97 @@
 		</section>
 
 		<!-- ==========================================================================
-		     FORMACIÓN E IDIOMAS
+		     FORMACIÓN E IDIOMAS (100% SEGREGADOS POR PERSONA)
 		     ========================================================================== -->
-		<section class="py-16 bg-brand-bg-secondary relative transition-colors duration-300 border-t border-brand-border">
+		<section id="education" class="py-16 bg-brand-bg-secondary relative transition-colors duration-300 border-t border-brand-border">
 			<div class="max-w-7xl mx-auto px-6">
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-					
-					<!-- Educación -->
-					<div class="space-y-6">
-						<span class="text-brand-gold uppercase tracking-[0.2em] text-xs font-semibold block" data-i18n="edu_tag">Formación</span>
-						<h2 class="font-serif text-3xl" data-i18n="edu_headline">Educación & Certificaciones</h2>
-						<div class="space-y-4">
-							<div class="p-4 rounded-lg bg-brand-card-bg border border-brand-border">
-								<h3 class="font-semibold text-sm text-brand-text-primary" data-i18n="edu_degree_1">Profesional en Negocios Gastronómicos</h3>
-								<span class="text-xs text-brand-text-secondary block italic" data-i18n="edu_inst_1">Instituto Gastronómico Cuisine Art, Venezuela</span>
+				
+				<!-- FORMACIÓN MODO HOSPITALITY -->
+				<div class="persona-hospitality-only fade-persona">
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+						<!-- Educación Hostelería -->
+						<div class="space-y-6">
+							<span class="text-brand-gold uppercase tracking-[0.2em] text-xs font-semibold block" data-i18n="hosp_edu_tag">Formación</span>
+							<h2 class="font-serif text-3xl" data-i18n="hosp_edu_headline">Educación & Certificaciones de Hostelería</h2>
+							<div class="space-y-4">
+								<div class="p-4 rounded-lg bg-brand-card-bg border border-brand-border">
+									<h3 class="font-semibold text-sm text-brand-text-primary" data-i18n="hosp_edu_degree_1">Profesional en Negocios Gastronómicos</h3>
+									<span class="text-xs text-brand-text-secondary block italic" data-i18n="hosp_edu_inst_1">Instituto Gastronómico Cuisine Art, Venezuela</span>
+								</div>
+								<div class="p-4 rounded-lg bg-brand-card-bg border border-brand-border">
+									<h3 class="font-semibold text-sm text-brand-text-primary" data-i18n="hosp_edu_degree_2">Curso de Hostelería y Protocolo</h3>
+									<span class="text-xs text-brand-text-secondary block italic" data-i18n="hosp_edu_inst_2">Eh! Escuela de Hostelería | Cáritas (Murcia, España)</span>
+								</div>
 							</div>
-							<div class="p-4 rounded-lg bg-brand-card-bg border border-brand-border">
-								<h3 class="font-semibold text-sm text-brand-text-primary" data-i18n="edu_degree_2">Curso de Hostelería y Protocolo</h3>
-								<span class="text-xs text-brand-text-secondary block italic" data-i18n="edu_inst_2">Eh! Escuela de Hostelería | Cáritas (Murcia, España)</span>
+						</div>
+
+						<!-- Idiomas Hostelería -->
+						<div class="space-y-6">
+							<span class="text-brand-gold uppercase tracking-[0.2em] text-xs font-semibold block" data-i18n="hosp_lang_title">Idiomas</span>
+							<h2 class="font-serif text-3xl">Competencia Lingüística</h2>
+							<div class="space-y-4">
+								<div class="p-4 rounded-lg bg-brand-card-bg border border-brand-border flex justify-between items-center">
+									<div>
+										<h3 class="font-semibold text-sm text-brand-text-primary" data-i18n="hosp_lang_es">Español</h3>
+										<span class="text-xs text-brand-text-secondary" data-i18n="hosp_lang_es_level">Nativo</span>
+									</div>
+									<span class="text-xs font-semibold px-2.5 py-1 bg-brand-gold/10 text-brand-gold rounded">Nativo</span>
+								</div>
+								<div class="p-4 rounded-lg bg-brand-card-bg border border-brand-border flex justify-between items-center">
+									<div>
+										<h3 class="font-semibold text-sm text-brand-text-primary" data-i18n="hosp_lang_en">Inglés</h3>
+										<span class="text-xs text-brand-text-secondary" data-i18n="hosp_lang_en_level">EF SET C1 (68/100)</span>
+									</div>
+									<span class="text-xs font-semibold px-2.5 py-1 bg-brand-gold/10 text-brand-gold rounded">C1 Avanzado</span>
+								</div>
 							</div>
 						</div>
 					</div>
-
-					<!-- Idiomas -->
-					<div class="space-y-6">
-						<span class="text-brand-gold uppercase tracking-[0.2em] text-xs font-semibold block" data-i18n="lang_title">Idiomas</span>
-						<h2 class="font-serif text-3xl">Competencia Lingüística</h2>
-						<div class="space-y-4">
-							<div class="p-4 rounded-lg bg-brand-card-bg border border-brand-border flex justify-between items-center">
-								<div>
-									<h3 class="font-semibold text-sm text-brand-text-primary" data-i18n="lang_es">Español</h3>
-									<span class="text-xs text-brand-text-secondary" data-i18n="lang_es_level">Nativo</span>
-								</div>
-								<span class="text-xs font-semibold px-2.5 py-1 bg-brand-gold/10 text-brand-gold rounded">Nativo</span>
-							</div>
-							<div class="p-4 rounded-lg bg-brand-card-bg border border-brand-border flex justify-between items-center">
-								<div>
-									<h3 class="font-semibold text-sm text-brand-text-primary" data-i18n="lang_en">Inglés</h3>
-									<span class="text-xs text-brand-text-secondary" data-i18n="lang_en_level">EF SET C1 (68/100)</span>
-								</div>
-								<span class="text-xs font-semibold px-2.5 py-1 bg-brand-gold/10 text-brand-gold rounded">C1 Avanzado</span>
-							</div>
-						</div>
-					</div>
-
 				</div>
+
+				<!-- FORMACIÓN MODO DEVELOPER (SIN MENCIONES A HOSTELERÍA) -->
+				<div class="persona-developer-only fade-persona">
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+						<!-- Educación & Certificados Tech -->
+						<div class="space-y-6">
+							<span class="text-tech-cyan font-mono uppercase tracking-[0.2em] text-xs font-semibold block" data-i18n="dev_edu_tag">Aprendizaje Continuo</span>
+							<h2 class="font-sans font-bold text-3xl" data-i18n="dev_edu_headline">Certificados Digitales & Fundamentos Técnicos</h2>
+							<div class="space-y-4">
+								<div class="p-4 rounded-lg bg-brand-card-bg border border-brand-border">
+									<h3 class="font-bold text-sm text-tech-cyan" data-i18n="dev_edu_degree_1">Desarrollo Web Moderno & Estándares W3C</h3>
+									<span class="text-xs text-brand-text-secondary block font-light mt-1" data-i18n="dev_edu_inst_1">Certificaciones digitales, buenas prácticas frontend y accesibilidad universal WCAG 2.1 AA.</span>
+								</div>
+								<div class="p-4 rounded-lg bg-brand-card-bg border border-brand-border">
+									<h3 class="font-bold text-sm text-tech-emerald" data-i18n="dev_edu_degree_2">Ingeniería de Software & Arquitectura</h3>
+									<span class="text-xs text-brand-text-secondary block font-light mt-1" data-i18n="dev_edu_inst_2">Desarrollo de aplicaciones modulares, Clean Code, Python y despliegues serverless en Google Cloud.</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Idiomas en Entorno Tech -->
+						<div class="space-y-6">
+							<span class="text-tech-cyan font-mono uppercase tracking-[0.2em] text-xs font-semibold block" data-i18n="dev_lang_title">Idiomas en Entorno Tech</span>
+							<h2 class="font-sans font-bold text-3xl">Competencia Lingüística</h2>
+							<div class="space-y-4">
+								<div class="p-4 rounded-lg bg-brand-card-bg border border-brand-border flex justify-between items-center">
+									<div>
+										<h3 class="font-bold text-sm text-brand-text-primary" data-i18n="dev_lang_es">Español</h3>
+										<span class="text-xs text-brand-text-secondary font-mono" data-i18n="dev_lang_es_level">Nativo (Documentación & Gestión)</span>
+									</div>
+									<span class="text-xs font-mono font-semibold px-2.5 py-1 bg-tech-cyan/10 text-tech-cyan rounded">Nativo</span>
+								</div>
+								<div class="p-4 rounded-lg bg-brand-card-bg border border-brand-border flex justify-between items-center">
+									<div>
+										<h3 class="font-bold text-sm text-brand-text-primary" data-i18n="dev_lang_en">Inglés</h3>
+										<span class="text-xs text-brand-text-secondary font-mono" data-i18n="dev_lang_en_level">EF SET C1 (68/100) — Comunicación Técnica & Fluidez</span>
+									</div>
+									<span class="text-xs font-mono font-semibold px-2.5 py-1 bg-tech-emerald/10 text-tech-emerald rounded">C1 Profesional</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</section>
 
@@ -721,8 +775,11 @@
 					<div class="lg:col-span-5 space-y-6">
 						<span class="text-brand-gold uppercase tracking-[0.2em] text-xs font-semibold block" data-i18n="contact_tag">Contacto</span>
 						<h2 id="contact-headline" class="font-serif text-4xl md:text-5xl" data-i18n="contact_headline">Hablemos</h2>
-						<p class="text-brand-text-secondary text-sm font-light leading-relaxed" data-i18n="contact_sub">
-							¿Interesado en colaborar en dirección de sala o en el desarrollo de un proyecto digital? Envíame un mensaje.
+						<p class="text-brand-text-secondary text-sm font-light leading-relaxed persona-hospitality-only fade-persona" data-i18n="hosp_contact_sub">
+							¿Buscas un gestor de sala, consultor para tu local gastronómico o manager de restaurante? Envíame un mensaje.
+						</p>
+						<p class="text-brand-text-secondary text-sm font-light leading-relaxed persona-developer-only fade-persona" data-i18n="dev_contact_sub">
+							¿Interesado en colaborar en el desarrollo de software, interfaces web o arquitectura digital? Envíame un mensaje.
 						</p>
 						<div class="space-y-4 pt-4">
 							<a href="tel:+34641511740" class="flex items-center gap-3 text-sm text-brand-text-primary hover:text-brand-gold transition-colors">

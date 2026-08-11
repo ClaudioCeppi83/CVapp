@@ -1,6 +1,7 @@
 /* ==========================================================================
    DICCIONARIO BILINGÜE COMPLETO (ES / EN) - DUAL PERSONA ARCHITECTURE
    Claudio Ceppi: Hospitality & Floor Manager ⟷ Frontend & Software Developer
+   (Datos 100% segregados e independientes por perfil profesional)
    ========================================================================== */
 
 const lang_data = {
@@ -18,6 +19,7 @@ const lang_data = {
 		nav_projects: "Proyectos",
 		nav_skills: "Habilidades",
 		nav_nexus: "Nexo GastroTech",
+		nav_edu: "Formación",
 		nav_gallery: "Galería",
 		nav_contact: "Contacto",
 		nav_export_pdf: "Exportar CV (PDF)",
@@ -29,7 +31,7 @@ const lang_data = {
 		aria_theme_toggle_light: "Cambiar a modo oscuro",
 		aria_menu_toggle: "Abrir o cerrar menú de navegación",
 
-		/* ==================== MODO HOSPITALITY ==================== */
+		/* ==================== 🍷 MODO HOSPITALITY (100% F&B / SALA) ==================== */
 		hosp_hero_tag: "Hospitality & Restaurant Floor Manager",
 		hosp_hero_headline: "Claudio <br class='hidden sm:inline'><span class='text-brand-gold italic'>Ceppi</span>",
 		hosp_hero_desc: "Especialista en dirección de sala y servicio al cliente de alto nivel, dedicado a garantizar experiencias gastronómicas memorables y optimizar las operaciones de alimentos y bebidas.",
@@ -76,7 +78,21 @@ const lang_data = {
 		hosp_skill_t4: "Liderazgo de Equipos & APPCC",
 		hosp_skill_d4: "Capacitación continua de personal, resolución de incidencias y cumplimiento higiénico-sanitario.",
 
-		/* ==================== MODO DEVELOPER ==================== */
+		hosp_edu_tag: "Formación",
+		hosp_edu_headline: "Educación & Certificaciones de Hostelería",
+		hosp_edu_degree_1: "Profesional en Negocios Gastronómicos",
+		hosp_edu_inst_1: "Instituto Gastronómico Cuisine Art, Venezuela",
+		hosp_edu_degree_2: "Curso de Hostelería y Protocolo",
+		hosp_edu_inst_2: "Eh! Escuela de Hostelería | Cáritas (Murcia, España)",
+		hosp_lang_title: "Idiomas",
+		hosp_lang_es: "Español",
+		hosp_lang_es_level: "Nativo",
+		hosp_lang_en: "Inglés",
+		hosp_lang_en_level: "EF SET C1 (68/100)",
+
+		hosp_contact_sub: "¿Buscas un gestor de sala, consultor para tu local gastronómico o manager de restaurante? Envíame un mensaje.",
+
+		/* ==================== 💻 MODO DEVELOPER (100% TECH / SOFTWARE) ==================== */
 		dev_hero_tag: "Frontend Engineer & Software Developer",
 		dev_hero_headline: "Claudio <br class='hidden sm:inline'><span class='text-tech-cyan'>Ceppi</span>",
 		dev_hero_desc: "Desarrollador de software enfocado en arquitecturas web accesibles (WCAG 2.1 AA), interfaces con Tailwind CSS & GSAP, herramientas CLI en Python y despliegues serverless en Google Cloud.",
@@ -123,7 +139,21 @@ const lang_data = {
 		dev_skill_t4: "Cloud, SEO & DevOps",
 		dev_skill_d4: "Google Cloud Platform, Firebase Hosting & Firestore, Schema.org JSON-LD, Git y CI/CD.",
 
-		/* ==================== EL NEXO GASTROTECH ==================== */
+		dev_edu_tag: "Aprendizaje Continuo",
+		dev_edu_headline: "Certificados Digitales & Fundamentos Técnicos",
+		dev_edu_degree_1: "Desarrollo Web Moderno & Estándares W3C",
+		dev_edu_inst_1: "Certificaciones digitales, buenas prácticas frontend y accesibilidad universal WCAG 2.1 AA.",
+		dev_edu_degree_2: "Ingeniería de Software & Arquitectura",
+		dev_edu_inst_2: "Desarrollo de aplicaciones modulares, Clean Code, Python y despliegues serverless en Google Cloud.",
+		dev_lang_title: "Idiomas en Entorno Tech",
+		dev_lang_es: "Español",
+		dev_lang_es_level: "Nativo (Documentación & Gestión)",
+		dev_lang_en: "Inglés",
+		dev_lang_en_level: "EF SET C1 (68/100) — Comunicación Técnica & Fluidez",
+
+		dev_contact_sub: "¿Interesado en colaborar en el desarrollo de software, interfaces web o arquitectura digital? Envíame un mensaje.",
+
+		/* ==================== ⚡ EL NEXO GASTROTECH (CONVERGENCIA) ==================== */
 		nexus_tag: "The Nexus // GastroTech",
 		nexus_headline: "Donde la Hostelería se encuentra con el <span class='text-brand-gold italic'>Código</span>",
 		nexus_manifesto: "\"La mayoría de los desarrolladores nunca han sentido la presión de un salón con 200 comensales un sábado por la noche. Y la mayoría de los hosteleros no saben cómo programar una solución que elimine sus cuellos de botella operativos. Mi propuesta de valor es unir ambos mundos para crear tecnología gastronómica que realmente funciona sobre el terreno.\"",
@@ -134,25 +164,11 @@ const lang_data = {
 		nexus_proj_3_title: "Digitalización F&B a Medida",
 		nexus_proj_3_desc: "Menús interactivos, reservas directas sin comisiones de plataformas y optimización de márgenes.",
 
-		/* Formación e Idiomas */
-		edu_tag: "Formación",
-		edu_headline: "Educación & Certificaciones",
-		edu_degree_1: "Profesional en Negocios Gastronómicos",
-		edu_inst_1: "Instituto Gastronómico Cuisine Art, Venezuela",
-		edu_degree_2: "Curso de Hostelería y Protocolo",
-		edu_inst_2: "Eh! Escuela de Hostelería | Cáritas (Murcia, España)",
-		lang_title: "Idiomas",
-		lang_es: "Español",
-		lang_es_level: "Nativo",
-		lang_en: "Inglés",
-		lang_en_level: "EF SET C1 (68/100)",
-
-		/* Galería y Contacto */
+		/* Galería y Contacto Común */
 		gal_tag: "Galería",
 		gal_headline: "Retratos Profesionales",
 		contact_tag: "Contacto",
 		contact_headline: "Hablemos",
-		contact_sub: "¿Interesado en colaborar en dirección de sala o en el desarrollo de un proyecto digital? Envíame un mensaje.",
 		contact_phone_lbl: "Teléfono",
 		contact_email_lbl: "Correo Electrónico",
 		form_name: "Nombre Completo",
@@ -178,6 +194,7 @@ const lang_data = {
 		nav_projects: "Projects",
 		nav_skills: "Skills",
 		nav_nexus: "GastroTech Nexus",
+		nav_edu: "Education",
 		nav_gallery: "Gallery",
 		nav_contact: "Contact",
 		nav_export_pdf: "Export CV (PDF)",
@@ -189,7 +206,7 @@ const lang_data = {
 		aria_theme_toggle_light: "Switch to dark mode",
 		aria_menu_toggle: "Open or close navigation menu",
 
-		/* ==================== MODO HOSPITALITY ==================== */
+		/* ==================== 🍷 MODO HOSPITALITY (100% F&B / SALA) ==================== */
 		hosp_hero_tag: "Hospitality & Restaurant Floor Manager",
 		hosp_hero_headline: "Claudio <br class='hidden sm:inline'><span class='text-brand-gold italic'>Ceppi</span>",
 		hosp_hero_desc: "Results-driven hospitality professional dedicated to ensuring outstanding guest dining experiences and optimizing food & beverage operations.",
@@ -236,7 +253,21 @@ const lang_data = {
 		hosp_skill_t4: "Team Leadership & Food Hygiene",
 		hosp_skill_d4: "Continuous staff training, dispute resolution, and HACCP compliance.",
 
-		/* ==================== MODO DEVELOPER ==================== */
+		hosp_edu_tag: "Education",
+		hosp_edu_headline: "Hospitality Education & Certifications",
+		hosp_edu_degree_1: "Degree in Gastronomic Business Management",
+		hosp_edu_inst_1: "Cuisine Art Gastronomic Institute, Venezuela",
+		hosp_edu_degree_2: "Course in Hospitality & Protocol",
+		hosp_edu_inst_2: "Eh! Hospitality School | Cáritas (Murcia, Spain)",
+		hosp_lang_title: "Languages",
+		hosp_lang_es: "Spanish",
+		hosp_lang_es_level: "Native",
+		hosp_lang_en: "English",
+		hosp_lang_en_level: "EF SET C1 (68/100)",
+
+		hosp_contact_sub: "Looking for an expert floor manager, restaurant director, or service consultant? Drop me a message below.",
+
+		/* ==================== 💻 MODO DEVELOPER (100% TECH / SOFTWARE) ==================== */
 		dev_hero_tag: "Frontend Engineer & Software Developer",
 		dev_hero_headline: "Claudio <br class='hidden sm:inline'><span class='text-tech-cyan'>Ceppi</span>",
 		dev_hero_desc: "Software developer specializing in accessible web architectures (WCAG 2.1 AA), Tailwind CSS & GSAP interfaces, Python CLI tools, and serverless Google Cloud deployments.",
@@ -283,7 +314,21 @@ const lang_data = {
 		dev_skill_t4: "Cloud, SEO & DevOps",
 		dev_skill_d4: "Google Cloud Platform, Firebase Hosting & Firestore, Schema.org JSON-LD, Git, and CI/CD.",
 
-		/* ==================== EL NEXO GASTROTECH ==================== */
+		dev_edu_tag: "Continuous Learning",
+		dev_edu_headline: "Digital Certifications & Technical Foundations",
+		dev_edu_degree_1: "Modern Web Development & W3C Standards",
+		dev_edu_inst_1: "Digital certifications, frontend best practices, and universal WCAG 2.1 AA accessibility.",
+		dev_edu_degree_2: "Software Engineering & Architecture",
+		dev_edu_inst_2: "Modular application design, Clean Code, Python, and serverless Google Cloud deployments.",
+		dev_lang_title: "Tech Environment Languages",
+		dev_lang_es: "Spanish",
+		dev_lang_es_level: "Native (Documentation & Management)",
+		dev_lang_en: "English",
+		dev_lang_en_level: "EF SET C1 (68/100) — Technical Communication & Fluency",
+
+		dev_contact_sub: "Interested in collaborating on software development, web interfaces, or digital architecture? Send me a message below.",
+
+		/* ==================== ⚡ THE GASTROTECH NEXUS (CONVERGENCE) ==================== */
 		nexus_tag: "The Nexus // GastroTech",
 		nexus_headline: "Where Hospitality meets <span class='text-brand-gold italic'>Code</span>",
 		nexus_manifesto: "\"Most software engineers have never felt the heat of a 200-cover restaurant floor on a Saturday night. And most hospitality directors don't know how to code the tools to fix their operational bottlenecks. My edge is bridging both worlds to build food & beverage technology that works seamlessly in real life.\"",
@@ -294,25 +339,11 @@ const lang_data = {
 		nexus_proj_3_title: "Custom F&B Digitalization",
 		nexus_proj_3_desc: "Direct booking engines, interactive menus without middleman commissions, and margin recovery.",
 
-		/* Formación e Idiomas */
-		edu_tag: "Education",
-		edu_headline: "Certifications",
-		edu_degree_1: "Degree in Gastronomic Business Management",
-		edu_inst_1: "Cuisine Art Gastronomic Institute, Venezuela",
-		edu_degree_2: "Course in Hospitality & Protocol",
-		edu_inst_2: "Eh! Hospitality School | Cáritas (Murcia, Spain)",
-		lang_title: "Languages",
-		lang_es: "Spanish",
-		lang_es_level: "Native",
-		lang_en: "English",
-		lang_en_level: "EF SET C1 (68/100)",
-
-		/* Galería y Contacto */
+		/* Common Gallery & Contact */
 		gal_tag: "Gallery",
 		gal_headline: "Professional Portraits",
 		contact_tag: "Contact",
 		contact_headline: "Get in Touch",
-		contact_sub: "Interested in front-of-house leadership or digital project development? Send me a message below.",
 		contact_phone_lbl: "Phone",
 		contact_email_lbl: "Email",
 		form_name: "Full Name",
