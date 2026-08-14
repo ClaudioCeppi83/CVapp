@@ -93,20 +93,20 @@ const lang_data = {
 		hosp_contact_sub: "¿Buscas un gestor de sala, consultor para tu local gastronómico o manager de restaurante? Envíame un mensaje.",
 
 		/* ==================== 💻 MODO DEVELOPER (100% AUTODIDACTA & ASISTIDO POR IA) ==================== */
-		dev_hero_tag: "Desarrollador Web & Creador Digital Autodidacta",
+		dev_hero_tag: "Aficionado al Desarrollo Web & Creador Digital",
 		dev_hero_headline: "Claudio <br class='hidden sm:inline'><span class='text-tech-cyan'>Ceppi</span>",
-		dev_hero_desc: "Conceptualizo y desarrollo proyectos web y herramientas digitales de forma autodidacta, apoyándome en inteligencia artificial para pulir e implementar soluciones funcionales, código limpio y despliegues en la nube.",
+		dev_hero_desc: "Hostelero de profesión y creador digital por pasión. En mi tiempo libre desarrollo proyectos web y herramientas digitales apoyándome en inteligencia artificial, lo que me ha permitido llevar ideas propias y de clientes a producción real.",
 		dev_hero_btn_projects: "Ver Proyectos",
 		dev_hero_btn_contact: "Contactar",
-		dev_hero_badge: "Desarrollo Autodidacta & IA Asistido",
+		dev_hero_badge: "Hobby Tech → 10+ Proyectos en Producción",
 
-		dev_about_tag: "Sobre Mí",
-		dev_about_headline: "De la Idea a la Realidad: <br><span class='text-tech-cyan'>Creación Asistida por IA</span>",
-		dev_about_p1: "Soy un creador digital y desarrollador autodidacta. Mi enfoque consiste en concebir ideas claras, definir la arquitectura y la experiencia de usuario, y apoyarme en modelos avanzados de Inteligencia Artificial para generar y refinar código robusto, accesible y bien estructurado.",
-		dev_about_p2: "He desarrollado de principio a fin landing pages de alto impacto, herramientas CLI en Python con pruebas unitarias y despliegues en producción sobre Google Cloud Firebase, demostrando cómo la visión creativa combinada con la IA permite crear software de primer nivel.",
+		dev_about_tag: "Sobre Esta Sección",
+		dev_about_headline: "Mi Otro Lado: <br><span class='text-tech-cyan'>Afición por la Tecnología</span>",
+		dev_about_p1: "Soy hostelero de profesión, pero la tecnología es mi pasión paralela. En mi tiempo libre aprendo y experimento con desarrollo web, apoyándome en modelos de Inteligencia Artificial para llevar ideas a código funcional sin necesidad de ser ingeniero de formación.",
+		dev_about_p2: "Este hobby me ha llevado a crear más de 10 proyectos desplegados en producción real: desde landing pages para emprendedores y amigos, hasta apps móviles, herramientas CLI y plataformas SaaS. Para mí, construir cosas que funcionan es la mejor forma de aprender.",
 		dev_stat_1_val: "100%",
-		dev_stat_1_lbl: "Autodidacta & Práctico",
-		dev_stat_2_val: "7+",
+		dev_stat_1_lbl: "Autodidacta",
+		dev_stat_2_val: "10+",
 		dev_stat_2_lbl: "Proyectos en Prod",
 
 		dev_projects_tag: "Portfolio Digital",
@@ -175,7 +175,7 @@ const lang_data = {
 		dev_lang_en: "Inglés",
 		dev_lang_en_level: "EF SET C1 (68/100) — Comunicación Técnica & Fluidez",
 
-		dev_contact_sub: "¿Tienes una idea o proyecto web que quieras desarrollar? Envíame un mensaje y hablemos.",
+		dev_contact_sub: "¿Tienes un proyecto web o una idea que quieras materializar? Aunque es mi hobby, me encanta colaborar. Envíame un mensaje.",
 
 		/* ==================== ⚡ EL NEXO GASTROTECH (CONVERGENCIA) ==================== */
 		nexus_tag: "The Nexus // GastroTech",
@@ -292,20 +292,20 @@ const lang_data = {
 		hosp_contact_sub: "Looking for an expert floor manager, restaurant director, or service consultant? Drop me a message below.",
 
 		/* ==================== 💻 MODO DEVELOPER (100% SELF-TAUGHT & AI-ASSISTED) ==================== */
-		dev_hero_tag: "Web Developer & Self-Taught Digital Creator",
+		dev_hero_tag: "Web Hobbyist & Self-Taught Digital Creator",
 		dev_hero_headline: "Claudio <br class='hidden sm:inline'><span class='text-tech-cyan'>Ceppi</span>",
-		dev_hero_desc: "I conceptualize and build web projects and digital utilities through self-driven learning, leveraging artificial intelligence to refine ideas, write clean code, and ship to the cloud.",
+		dev_hero_desc: "Hospitality professional by trade, tech enthusiast by passion. In my free time I build web projects and digital tools using AI assistance — which has let me ship real working products for myself and others.",
 		dev_hero_btn_projects: "View Projects",
 		dev_hero_btn_contact: "Contact Me",
-		dev_hero_badge: "Self-Taught & AI-Assisted Development",
+		dev_hero_badge: "Hobby Tech → 10+ Live Production Projects",
 
-		dev_about_tag: "About Me",
-		dev_about_headline: "From Concept to Reality: <br><span class='text-tech-cyan'>AI-Assisted Creation</span>",
-		dev_about_p1: "I am a digital creator and self-taught developer. My methodology is centered on formulating clear concepts, architecting intuitive user experiences, and utilizing state-of-the-art AI to generate and polish robust, accessible, and structured code.",
-		dev_about_p2: "I have created end-to-end high-impact landing pages, Python CLI tools with unit tests, and production deployments on Google Cloud Firebase, proving how visionary ideas combined with modern AI workflows deliver outstanding software.",
+		dev_about_tag: "About This Side",
+		dev_about_headline: "My Other Side: <br><span class='text-tech-cyan'>A Passion for Technology</span>",
+		dev_about_p1: "I’m a hospitality professional first — but technology is my parallel passion. In my spare time I learn and experiment with web development, using AI models to turn ideas into working code without a formal engineering background.",
+		dev_about_p2: "This hobby has led me to ship 10+ projects into real production: from landing pages for entrepreneurs and friends, to mobile apps, CLI tools, and SaaS platforms. For me, building things that actually work is the best way to learn.",
 		dev_stat_1_val: "100%",
-		dev_stat_1_lbl: "Self-Taught & Hands-on",
-		dev_stat_2_val: "7+",
+		dev_stat_1_lbl: "Self-Taught",
+		dev_stat_2_val: "10+",
 		dev_stat_2_lbl: "Production Projects",
 
 		dev_projects_tag: "Digital Showcase",

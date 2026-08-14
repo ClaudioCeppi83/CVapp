@@ -14,8 +14,8 @@
 	
 	<!-- Open Graph / LinkedIn / WhatsApp -->
 	<meta property="og:type" content="profile">
-	<meta property="og:site_name" content="Claudio Ceppi - Dual Portfolio">
-	<meta property="og:title" content="Claudio Ceppi | Hospitality Director & Web Developer">
+	<meta property="og:site_name" content="Claudio Ceppi - Portfolio Profesional">
+	<meta property="og:title" content="Claudio Ceppi | Hospitality & Floor Manager | Barcelona">
 	<meta property="og:description" content="Especialista en dirección de sala y creador digital autodidacta asistido por IA. Fusión entre experiencia operativa en hostelería y desarrollo web moderno.">
 	<meta property="og:url" content="https://claudio-ceppi.web.app/">
 	<meta property="og:image" content="https://claudio-ceppi.web.app/assets/images/claudio_portrait.jpg">
@@ -26,8 +26,8 @@
 	
 	<!-- Twitter Cards -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Claudio Ceppi | Hospitality & Web Development">
-	<meta name="twitter:description" content="Portfolio profesional de Claudio Ceppi. Dirección de sala y proyectos digitales asistidos por IA.">
+	<meta name="twitter:title" content="Claudio Ceppi | Hospitality & Floor Manager">
+	<meta name="twitter:description" content="Profesional de hostelería con 10+ años en sala y gestión gastronómica. Con afición por el desarrollo web y la tecnología.">
 	<meta name="twitter:image" content="https://claudio-ceppi.web.app/assets/images/claudio_portrait.jpg">
 
 	<!-- Favicons Vectoriales y Manifiesto -->
@@ -76,7 +76,7 @@
 				"@id": "https://claudio-ceppi.web.app/#website",
 				"url": "https://claudio-ceppi.web.app/",
 				"name": "Claudio Ceppi Portfolio",
-				"description": "Portfolio y Curriculum Vitae de Claudio Ceppi - Profesional de la Gastronomía y Creador Digital",
+				"description": "Portfolio y Curriculum Vitae de Claudio Ceppi — Especialista en Hospitalidad y Gestión de Sala con 10+ años de experiencia, y aficionado al desarrollo web.",
 				"publisher": {
 					"@id": "https://claudio-ceppi.web.app/#person"
 				},
@@ -112,16 +112,22 @@
 					"https://github.com/ClaudioCeppi83",
 					"https://www.linkedin.com/in/claudioceppi/"
 				],
+				"jobTitle": "Hospitality & Floor Manager",
 				"hasOccupation": [
 					{
 						"@type": "Occupation",
 						"name": "Hospitality & Floor Manager",
-						"description": "Dirección de sala, servicio al cliente VIP, arqueos de caja y control de operaciones gastronómicas."
+						"description": "Dirección de sala, servicio al cliente VIP, formación de equipos, arqueos de caja y control de operaciones gastronómicas. 10+ años de experiencia en España y Latinoamérica.",
+						"estimatedSalary": {
+							"@type": "MonetaryAmountDistribution",
+							"currency": "EUR",
+							"unitText": "YEAR"
+						}
 					},
 					{
 						"@type": "Occupation",
-						"name": "Web Developer & Self-Taught Digital Creator",
-						"description": "Conceptualización y desarrollo de proyectos web, interfaces modernas con Tailwind CSS, utilidades Python y despliegues serverless asistidos por IA."
+						"name": "Web Developer (Hobby)",
+						"description": "Aficionado autodidacta al desarrollo web. Creación de proyectos personales y para terceros asistido por IA como actividad creativa complementaria."
 					}
 				]
 			}
@@ -138,7 +144,7 @@
 	<div id="preloader" class="fixed inset-0 bg-brand-dark z-50 flex flex-col justify-center items-center transition-all duration-700" aria-hidden="true">
 		<span class="font-serif text-4xl md:text-6xl text-brand-gold italic tracking-widest opacity-0 animate-[fadeIn_1.2s_ease-out_forwards]">Claudio Ceppi</span>
 		<div class="h-[1px] w-12 bg-brand-gold mt-4 opacity-0 animate-[scaleWidth_1.2s_ease-out_0.4s_forwards]"></div>
-		<p class="text-xs uppercase tracking-widest text-brand-muted mt-4 opacity-0 animate-[fadeIn_1.2s_ease-out_0.8s_forwards] font-sans">Hospitality ⟷ Digital Creator</p>
+		<p class="text-xs uppercase tracking-widest text-brand-muted mt-4 opacity-0 animate-[fadeIn_1.2s_ease-out_0.8s_forwards] font-sans">Hospitality & Floor Manager</p>
 	</div>
 
 	<!-- Header de Navegación -->
@@ -152,12 +158,12 @@
 
 			<!-- SELECTOR DUAL DE IDENTIDAD (PERSONA SWITCHER) -->
 			<div class="persona-switcher flex items-center bg-brand-bg-secondary border border-brand-border rounded-full p-1 transition-colors duration-300" role="group" data-i18n-aria="aria_persona_group" aria-label="Seleccionar perfil profesional activo">
-				<button onclick="switch_persona('hospitality')" id="btn-persona-hosp" class="px-3.5 py-1.5 rounded-full bg-brand-gold text-brand-dark font-medium transition-all duration-300 shadow-sm focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none flex items-center gap-1.5 text-xs" aria-pressed="true">
-					<i class="fa-solid fa-wine-glass text-[11px]" aria-hidden="true"></i>
+				<button onclick="switch_persona('hospitality')" id="btn-persona-hosp" class="px-3.5 py-1.5 rounded-full bg-brand-gold text-brand-dark font-semibold transition-all duration-300 shadow-sm focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none flex items-center gap-1.5 text-xs" aria-pressed="true">
+					<i class="fa-solid fa-utensils text-[10px]"></i>
 					<span data-i18n="persona_label_hospitality">Hostelería</span>
 				</button>
-				<button onclick="switch_persona('developer')" id="btn-persona-dev" class="px-3.5 py-1.5 rounded-full text-brand-text-secondary hover:text-brand-text-primary transition-all duration-300 focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none flex items-center gap-1.5 text-xs" aria-pressed="false">
-					<i class="fa-solid fa-code text-[11px]" aria-hidden="true"></i>
+				<button onclick="switch_persona('developer')" id="btn-persona-dev" class="px-3.5 py-1.5 rounded-full text-brand-text-secondary hover:text-brand-text-primary transition-all duration-300 focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none flex items-center gap-1.5 text-xs opacity-70" aria-pressed="false">
+					<i class="fa-solid fa-laptop-code text-[10px]"></i>
 					<span data-i18n="persona_label_developer">Developer</span>
 				</button>
 			</div>
