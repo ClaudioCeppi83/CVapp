@@ -147,6 +147,10 @@ const lang_data = {
 		dev_proj_9_title: "Agente Resources KPI",
 		dev_proj_9_desc: "Monitor de recursos y consumo de tokens de IA para Linux/Ubuntu con AppIndicator GTK3, soporte multi-proveedor (Claude, Gemini, Copilot) y empaquetado Debian.",
 		dev_proj_9_link: "Ver en GitHub",
+		dev_proj_10_tag: "Logística B2B / PWA Offline-First",
+		dev_proj_10_title: "Logística SaaS Badalona",
+		dev_proj_10_desc: "PWA de última milla con escáner OCR por Google Cloud Vision, cola de resiliencia IndexedDB, aislamiento multitenant y testing E2E con Playwright.",
+		dev_proj_10_link: "Ver Proyecto en Vivo",
 
 		dev_skills_tag: "Herramientas & Flujo de Trabajo",
 		dev_skills_headline: "Metodología & Stack de Desarrollo",
@@ -342,6 +346,10 @@ const lang_data = {
 		dev_proj_9_title: "Agente Resources KPI",
 		dev_proj_9_desc: "AI token consumption and resource monitor for Linux/Ubuntu with GTK3 AppIndicator, multi-provider support (Claude, Gemini, Copilot), and Debian packaging.",
 		dev_proj_9_link: "View on GitHub",
+		dev_proj_10_tag: "B2B Logistics / Offline-First PWA",
+		dev_proj_10_title: "Badalona Logistics SaaS",
+		dev_proj_10_desc: "Last-mile PWA with Google Cloud Vision OCR scanner, IndexedDB offline resilience queue, multitenant isolation, and Playwright E2E testing suite.",
+		dev_proj_10_link: "View Live Project",
 
 		dev_skills_tag: "Tools & Workflow",
 		dev_skills_headline: "Methodology & Development Stack",
