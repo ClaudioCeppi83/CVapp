@@ -66,7 +66,9 @@
 		})();
 	</script>
 
-	<!-- Schema.org JSON-LD Grafo -->
+	<meta name="model-context" content="enabled">
+
+	<!-- Schema.org JSON-LD Grafo & WebMCP Agent Metadata -->
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
@@ -103,6 +105,7 @@
 				"url": "https://claudio-ceppi.web.app/",
 				"telephone": "+34641511740",
 				"email": "mailto:erceppi@gmail.com",
+				"image": "https://claudio-ceppi.web.app/assets/images/claudio_portrait.jpg",
 				"address": {
 					"@type": "PostalAddress",
 					"addressLocality": "Murcia",
@@ -113,21 +116,126 @@
 					"https://www.linkedin.com/in/claudioceppi/"
 				],
 				"jobTitle": "Hospitality & Floor Manager",
+				"knowsAbout": [
+					"Floor Management & Guest Service",
+					"Fine Dining & Front-of-House Operations",
+					"Cash Till Auditing & Stock Reconciliation",
+					"Enology, Mixology & Protocol",
+					"Team Leadership & HACCP Compliance",
+					"React 18 & TypeScript",
+					"Google Cloud Firebase & Firestore",
+					"Python 3 & Automation",
+					"Flutter 3 & Mobile Development",
+					"WebMCP & AI-Assisted Workflows"
+				],
 				"hasOccupation": [
 					{
 						"@type": "Occupation",
 						"name": "Hospitality & Floor Manager",
-						"description": "Dirección de sala, servicio al cliente VIP, formación de equipos, arqueos de caja y control de operaciones gastronómicas. 10+ años de experiencia en España y Latinoamérica.",
-						"estimatedSalary": {
-							"@type": "MonetaryAmountDistribution",
-							"currency": "EUR",
-							"unitText": "YEAR"
-						}
+						"description": "Dirección de sala, servicio al cliente VIP, formación de equipos, arqueos de caja y control de operaciones gastronómicas. 10+ años de experiencia en España y Latinoamérica."
 					},
 					{
 						"@type": "Occupation",
 						"name": "Web Developer (Hobby)",
 						"description": "Aficionado autodidacta al desarrollo web. Creación de proyectos personales y para terceros asistido por IA como actividad creativa complementaria."
+					}
+				]
+			},
+			{
+				"@type": "ItemList",
+				"@id": "https://claudio-ceppi.web.app/#projects",
+				"name": "Proyectos de Desarrollo Web & Software — Claudio Ceppi",
+				"numberOfItems": 10,
+				"itemListElement": [
+					{
+						"@type": "SoftwareApplication",
+						"position": 1,
+						"name": "Logística SaaS Badalona",
+						"applicationCategory": "BusinessApplication",
+						"operatingSystem": "Web, PWA",
+						"url": "https://logistica-saas.web.app",
+						"description": "PWA de última milla con escáner OCR por Vision API, cola IndexedDB offline y testing Playwright."
+					},
+					{
+						"@type": "SoftwareApplication",
+						"position": 2,
+						"name": "Mau Ceppi // Funktaxi 1533 (NYC)",
+						"applicationCategory": "MultimediaApplication",
+						"operatingSystem": "Web",
+						"url": "https://mau-landing.web.app",
+						"description": "Portfolio inmersivo dark cyber-editorial con animaciones GSAP y Google Cloud Firestore."
+					},
+					{
+						"@type": "SoftwareApplication",
+						"position": 3,
+						"name": "Chiara Coppola Atelier",
+						"applicationCategory": "WebApplication",
+						"operatingSystem": "Web",
+						"url": "https://chiara-coppola.web.app",
+						"description": "Landing page de alta gama para costura a medida con accesibilidad WCAG 2.1 AA."
+					},
+					{
+						"@type": "SoftwareApplication",
+						"position": 4,
+						"name": "Italia: Sabor & Nostalgia",
+						"applicationCategory": "WebApplication",
+						"operatingSystem": "Web",
+						"url": "https://sabor-italia.web.app",
+						"description": "Plataforma editorial gastronómica con capa híbrida Firestore y motor de sustituciones saludables."
+					},
+					{
+						"@type": "SoftwareApplication",
+						"position": 5,
+						"name": "D'Alesso — Cucina Pura",
+						"applicationCategory": "WebApplication",
+						"operatingSystem": "Web",
+						"url": "https://alesso-saludable.web.app",
+						"description": "Menú digital gastronómico consciente con soporte multilingüe en 3 idiomas."
+					},
+					{
+						"@type": "SoftwareApplication",
+						"position": 6,
+						"name": "GRADO — Espresso Authority",
+						"applicationCategory": "WebApplication",
+						"operatingSystem": "Web",
+						"url": "https://grado-coffee.web.app",
+						"description": "Portal editorial y generador estático en Python para cafeteras espresso premium."
+					},
+					{
+						"@type": "SoftwareApplication",
+						"position": 7,
+						"name": "Expense Tracker CLI",
+						"applicationCategory": "UtilityApplication",
+						"operatingSystem": "Cross-platform CLI",
+						"url": "https://github.com/ClaudioCeppi83/expense-tracker-cli",
+						"description": "Gestor de finanzas personales CLI con cifrado Fernet AES y 14 tests unitarios."
+					},
+					{
+						"@type": "SoftwareApplication",
+						"position": 8,
+						"name": "Text Editor Core (te)",
+						"applicationCategory": "DeveloperApplication",
+						"operatingSystem": "Linux/POSIX Terminal",
+						"url": "https://github.com/ClaudioCeppi83/text-editor-core",
+						"description": "Motor de buffer de texto modal 2D para terminal con 20 tests unitarios."
+					},
+					{
+						"@type": "SoftwareApplication",
+						"position": 9,
+						"name": "Geo Alarm",
+						"applicationCategory": "TravelApplication",
+						"operatingSystem": "Android, iOS (Flutter)",
+						"url": "https://github.com/ClaudioCeppi83/geo-alarm",
+						"description": "App móvil Flutter de alarmas GPS por geocercas con Google Maps y 11 tests SRE."
+					},
+					{
+						"@type": "SoftwareApplication",
+						"position": 10,
+						"name": "Agente Resources KPI",
+						"applicationCategory": "UtilityApplication",
+						"operatingSystem": "Ubuntu / Linux GTK3",
+						"url": "https://github.com/ClaudioCeppi83/agente-resources-kpi",
+						"description": "Monitor de cuotas y tokens de IA para Linux con AppIndicator GTK3 y paquete Debian."
 					}
 				]
 			}
@@ -438,7 +546,7 @@
 
 					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 						<!-- Proyecto 1: Mau Ceppi NYC -->
-						<article class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up">
+						<article data-project-id="mau-landing" class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up">
 							<div>
 								<div class="flex justify-between items-start mb-3">
 									<span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-tech-cyan bg-tech-cyan/10 px-2.5 py-1 rounded" data-i18n="dev_proj_1_tag">Dark Cyber-Editorial / Web</span>
@@ -458,7 +566,7 @@
 						</article>
 
 						<!-- Proyecto 2: Chiara Coppola -->
-						<article class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+						<article data-project-id="chiara-coppola" class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
 							<div>
 								<div class="flex justify-between items-start mb-3">
 									<span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-brand-gold bg-brand-gold/10 px-2.5 py-1 rounded" data-i18n="dev_proj_2_tag">Haute Couture Atelier / A11y</span>
@@ -478,7 +586,7 @@
 						</article>
 
 						<!-- Proyecto 7: Italia: Sabor & Nostalgia -->
-						<article class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="120">
+						<article data-project-id="sabor-italia" class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="120">
 							<div>
 								<div class="flex justify-between items-start mb-3">
 									<span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-red-400 bg-red-400/10 px-2.5 py-1 rounded" data-i18n="dev_proj_7_tag">Recetario Fullstack / Cocina</span>
@@ -498,7 +606,7 @@
 						</article>
 
 						<!-- Proyecto 5: D'Alesso — Cucina Pura -->
-						<article class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="150">
+						<article data-project-id="alesso-saludable" class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="150">
 							<div>
 								<div class="flex justify-between items-start mb-3">
 									<span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-amber-400 bg-amber-400/10 px-2.5 py-1 rounded" data-i18n="dev_proj_5_tag">GastroTech Multilingüe / Menú</span>
@@ -518,7 +626,7 @@
 						</article>
 
 						<!-- Proyecto 6: GRADO — Espresso Authority -->
-						<article class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+						<article data-project-id="affiliate-saas" class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
 							<div>
 								<div class="flex justify-between items-start mb-3">
 									<span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-orange-400 bg-orange-400/10 px-2.5 py-1 rounded" data-i18n="dev_proj_6_tag">Motor Python / Editorial Afiliados</span>
@@ -538,7 +646,7 @@
 						</article>
 
 						<!-- Proyecto 3: Expense Tracker CLI -->
-						<article class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="250">
+						<article data-project-id="expense-tracker-cli" class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="250">
 							<div>
 								<div class="flex justify-between items-start mb-3">
 									<span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-tech-emerald bg-tech-emerald/10 px-2.5 py-1 rounded" data-i18n="dev_proj_3_tag">Python CLI & Web GUI</span>
@@ -558,7 +666,7 @@
 						</article>
 
 						<!-- Proyecto 4: Text Editor Core -->
-						<article class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+						<article data-project-id="text-editor-core" class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
 							<div>
 								<div class="flex justify-between items-start mb-3">
 									<span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-400/10 px-2.5 py-1 rounded" data-i18n="dev_proj_4_tag">Core Engine / Data Structures</span>
@@ -578,7 +686,7 @@
 						</article>
 
 						<!-- Proyecto 8: Geo Alarm -->
-						<article class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="350">
+						<article data-project-id="geo-alarm" class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="350">
 							<div>
 								<div class="flex justify-between items-start mb-3">
 									<span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-teal-400 bg-teal-400/10 px-2.5 py-1 rounded" data-i18n="dev_proj_8_tag">Flutter Mobile / Google Maps</span>
@@ -598,7 +706,7 @@
 						</article>
 
 						<!-- Proyecto 9: Agente Resources KPI -->
-						<article class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="400">
+						<article data-project-id="agente-resources-kpi" class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="400">
 							<div>
 								<div class="flex justify-between items-start mb-3">
 									<span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-cyan-400 bg-cyan-400/10 px-2.5 py-1 rounded" data-i18n="dev_proj_9_tag">Linux Desktop / GTK3 & Python</span>
@@ -618,7 +726,7 @@
 						</article>
 
 						<!-- Proyecto 10: Logística SaaS Badalona -->
-						<article class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="450">
+						<article data-project-id="logistica-saas" class="bg-brand-card-bg border border-brand-border rounded-xl p-6 hover:border-tech-cyan/50 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="450">
 							<div>
 								<div class="flex justify-between items-start mb-3">
 									<span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-blue-400 bg-blue-400/10 px-2.5 py-1 rounded" data-i18n="dev_proj_10_tag">Logística B2B / PWA Offline-First</span>
@@ -1001,5 +1109,6 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/translations.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/webmcp.js" defer></script>
 </body>
 </html>
