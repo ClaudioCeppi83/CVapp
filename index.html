@@ -60,7 +60,7 @@
 					document.documentElement.classList.remove('dark');
 				}
 				var params = new URLSearchParams(window.location.search);
-				var mode = params.get('mode') || localStorage.getItem('active_persona') || 'hospitality';
+				var mode = params.get('mode') || 'hospitality';
 				document.documentElement.setAttribute('data-persona', mode);
 			} catch (e) {}
 		})();

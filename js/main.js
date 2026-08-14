@@ -80,11 +80,14 @@ function switch_persona(persona, update_url = true) {
 
 	const root = document.documentElement;
 	root.setAttribute('data-persona', persona);
-	localStorage.setItem('active_persona', persona);
 
 	if (update_url && window.history && window.history.replaceState) {
 		const url = new URL(window.location.href);
-		url.searchParams.set('mode', persona);
+		if (persona === 'hospitality') {
+			url.searchParams.delete('mode');
+		} else {
+			url.searchParams.set('mode', persona);
+		}
 		window.history.replaceState({}, '', url.toString());
 	}
 
@@ -98,8 +101,8 @@ function switch_persona(persona, update_url = true) {
 		btn_dev.setAttribute('aria-pressed', !is_hosp ? 'true' : 'false');
 
 		if (is_hosp) {
-			btn_hosp.className = "px-3.5 py-1.5 rounded-full bg-brand-gold text-brand-dark font-medium transition-all duration-300 shadow-sm focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none flex items-center gap-1.5 text-xs";
-			btn_dev.className = "px-3.5 py-1.5 rounded-full text-brand-text-secondary hover:text-brand-text-primary transition-all duration-300 focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none flex items-center gap-1.5 text-xs";
+			btn_hosp.className = "px-3.5 py-1.5 rounded-full bg-brand-gold text-brand-dark font-semibold transition-all duration-300 shadow-sm focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none flex items-center gap-1.5 text-xs";
+			btn_dev.className = "px-3.5 py-1.5 rounded-full text-brand-text-secondary hover:text-brand-text-primary transition-all duration-300 focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none flex items-center gap-1.5 text-xs opacity-70";
 		} else {
 			btn_dev.className = "px-3.5 py-1.5 rounded-full bg-tech-cyan text-tech-dark font-medium transition-all duration-300 shadow-sm focus-visible:ring-2 focus-visible:ring-tech-cyan focus-visible:outline-none flex items-center gap-1.5 text-xs font-mono";
 			btn_hosp.className = "px-3.5 py-1.5 rounded-full text-brand-text-secondary hover:text-brand-text-primary transition-all duration-300 focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none flex items-center gap-1.5 text-xs";
@@ -248,11 +251,11 @@ function handle_contact_form(event) {
 document.addEventListener('DOMContentLoaded', () => {
 	init_theme();
 
-	/* Detectar persona inicial desde URL o localStorage */
+	/* Detectar persona inicial desde URL (siempre 'hospitality' por defecto) */
 	const url_params = new URLSearchParams(window.location.search);
 	const mode_from_url = url_params.get('mode');
-	const saved_persona = mode_from_url || localStorage.getItem('active_persona') || 'hospitality';
-	switch_persona(saved_persona, false);
+	const initial_persona = (mode_from_url === 'developer') ? 'developer' : 'hospitality';
+	switch_persona(initial_persona, false);
 
 	/* Detectar idioma inicial */
 	const saved_lang = localStorage.getItem('cv_lang') || 
